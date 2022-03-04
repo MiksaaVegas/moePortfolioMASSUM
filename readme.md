@@ -8,3 +8,4 @@
 Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM.
 ### Tek na nastani
 *02.03* Proektot e zapochnat na 02.03.2022 godina. Na prviot den e zapochnata izrabotkata na skicata na web-stranata. Zavrshena e samo prvata sekcija.
+*03.03* Napravena e sekcija koja me opishuva mene i sodrzhi najosnovni informacii.
