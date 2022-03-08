@@ -12,3 +12,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *03.03* Napravena e sekcija koja me opishuva mene i sodrzhi najosnovni informacii.
 
 - *05.03* Mali no bitni detali vo sekoja sekcija, i zapochnata sekcija za kako jas rabotam.
+
+- *08.03* Dodadeni nekoi elementi vo sekcijata za kako rabotam.
