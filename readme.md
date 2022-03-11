@@ -4,6 +4,7 @@
 - **Adobe Photoshop 2021**
 - **Adobe Lightroom Classic 2022**
 - **Adobe XD**
+- **[Haikei](https://app.haikei.app/)**
 ### Namena
 Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM.
 ### Tek na nastani
@@ -16,3 +17,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *08.03* Dodadeni nekoi elementi vo sekcijata za kako rabotam.
 
 - *10.03* Dovrshena sekcijata kako rabotam i zavrshena sekcijata povikaj me (Call to Action).
+
+- *11.03* Novi sitni efekti i dekoracii niz sajtot.
