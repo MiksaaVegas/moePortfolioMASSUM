@@ -19,3 +19,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *10.03* Dovrshena sekcijata kako rabotam i zavrshena sekcijata povikaj me (Call to Action).
 
 - *11.03* Novi sitni efekti i dekoracii niz sajtot.
+
+- *12.03* Mali promeni niz celiot sajt. Zavrshena e cela sekcija za proekti na pochetna strana.
