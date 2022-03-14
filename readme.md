@@ -23,3 +23,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *12.03* Mali promeni niz celiot sajt. Zavrshena e cela sekcija za proekti na pochetna strana.
 
 - *13.03* Novo logo, nov paragraf i slika vo sekcijata za mene i mali promeni vo istata. Zavrshen footerot na stranta, i prvite tri sekcii na mobile desginot.
+
+- *14.03* Dovrshena skicata za telefon.
