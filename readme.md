@@ -1,5 +1,5 @@
 # Karierno Portfolio
-## Izrabotka na Mihail Kuzmanoski - SOSU Ilinden, pod mentorstvo na Hristina Stojanovska S.
+## Izrabotka na Mihail Kuzmanoski - SOSU Ilinden, pod mentorstvo na Hristina Stojanovska.
 ### Koristeni tehnologii
 - **Adobe Photoshop 2021**
 - **Adobe Lightroom Classic 2022**
@@ -25,3 +25,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *13.03* Novo logo, nov paragraf i slika vo sekcijata za mene i mali promeni vo istata. Zavrshen footerot na stranta, i prvite tri sekcii na mobile desginot.
 
 - *14.03* Dovrshena skicata za telefon.
+
+- *16.03* Optimizirani slikite, namalenena goleminata do ~4 pati. Pochetok na kodiranje na stranta, zapochnata prvata sekcija.
