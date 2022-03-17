@@ -5,6 +5,10 @@
 - **Adobe Lightroom Classic 2022**
 - **Adobe XD**
 - **[Haikei](https://app.haikei.app/)**
+- **HTML5**
+- **CSS3, SCSS**
+- **Bootstrap 5**
+- **Google Fonts**
 ### Namena
 Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM.
 ### Tek na nastani
@@ -27,3 +31,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *14.03* Dovrshena skicata za telefon.
 
 - *16.03* Optimizirani slikite, namalenena goleminata do ~4 pati. Pochetok na kodiranje na stranta, zapochnata prvata sekcija.
+
+- *17.03* Zavrshena hero sekcijata(ostana ushte slikata).
