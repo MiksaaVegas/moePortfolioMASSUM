@@ -33,3 +33,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *16.03* Optimizirani slikite, namalenena goleminata do ~4 pati. Pochetok na kodiranje na stranta, zapochnata prvata sekcija.
 
 - *17.03* Zavrshena hero sekcijata(ostana ushte slikata).
+
+- *19.03* Zavrshena sekcijata za mene. Mali promeni vo prethodnata sekcija.
