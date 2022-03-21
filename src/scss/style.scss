@@ -120,6 +120,7 @@ body {
 }
 .aboutMeSection {
   padding-top: 5rem;
+  margin-bottom: 8rem;
   position: relative;
   text-align: center;
   h1 {
@@ -128,7 +129,7 @@ body {
     color: #000000;
     margin-bottom: 8rem;
     display: inline-block;
-    background-image: linear-gradient(#00FFB1, #00FFB1);
+    background-image: linear-gradient(#00ffb1, #00ffb1);
     background-size: 100% 12px;
     background-repeat: no-repeat;
     background-position: left 70px;
@@ -159,68 +160,68 @@ body {
       z-index: -10;
     }
   }
-  .quoteContainer{
+  .quoteContainer {
     margin: 0;
     position: relative;
-    img{
+    img {
       max-width: 150px;
       transform: rotate(-10deg);
       position: absolute;
       z-index: -1;
     }
-    img:nth-child(3){
+    img:nth-child(3) {
       transform: rotate(-190deg);
       right: 9%;
       top: 2%;
     }
-    img:nth-child(1){
+    img:nth-child(1) {
       left: 9%;
       top: 25%;
     }
-    .quote{
+    .quote {
       font-family: TropicalAsian;
       font-size: 8rem;
       color: #000000;
       text-align: center;
     }
-    .rapper{
+    .rapper {
       font-family: Inter;
       font-weight: 300;
       text-align: center;
     }
   }
-  .blob{
+  .blob {
     position: absolute;
   }
-  .blob1{
+  .blob1 {
     top: 0;
     right: 0;
     z-index: -1;
     transform: rotate(-53deg);
     width: 20%;
   }
-  .blob2{
+  .blob2 {
     top: 20%;
     left: 10%;
     z-index: -1;
     transform: rotate(45deg);
     width: 10%;
   }
-  .blob3{
+  .blob3 {
     top: 35%;
     left: 46%;
     z-index: -2;
     transform: rotate(45deg);
     width: 14%;
   }
-  .blob4{
+  .blob4 {
     top: 60%;
     left: 8%;
     z-index: -1;
     transform: rotate(45deg);
     width: 18%;
   }
-  .blob5{
+  .blob5 {
     top: 69%;
     right: 8%;
     z-index: -1;
@@ -228,7 +229,69 @@ body {
     width: 12%;
   }
 }
+.projectsSection {
+  background-image: url(../../assets/img/blobBgProjects.svg);
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  min-height: 1000px;
+  position: relative;
+  h1 {
+    padding-top: 5rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: Mont;
+    margin: 0;
+  }
+  h2 {
+    font-family: Pacifico;
+    font-size: 4rem;
+    line-height: 3rem;
+    position: absolute;
+    left: 52%;
+    top: 12.5%;
+    transform: rotate(-12deg);
+  }
+  .projectsSectionDesc {
+    font-weight: 500;
+    font-family: "Open Sans";
+    font-size: 1.25rem;
+    width: 75%;
+    margin: 5rem auto 7rem auto;
+  }
+  .projects {
+    .row {
+      text-align: left;
+      margin-bottom: 5rem;
+      .projectsImg {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          border-radius: 30px;
+        }
+      }
+      h3 {
+        font-size: 2rem;
+        font-family: Mont;
+        margin-bottom: 1.2rem;
+      }
+      p {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
 @font-face {
   font-family: TropicalAsian;
   src: url(../fonts/TropicalAsian.ttf);
+}
+@font-face {
+  font-family: Mont;
+  src: url(../fonts/Mont.otf);
+}
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico.ttf);
 }
