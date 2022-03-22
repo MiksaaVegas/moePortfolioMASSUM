@@ -37,3 +37,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *19.03* Zavrshena sekcijata za mene. Mali promeni vo prethodnata sekcija.
 
 - *21.03* Zapochnata sekcijata so moite proekti.
+
+- *22.03* Zavrshena sekcijata so proektite(za sega...).
