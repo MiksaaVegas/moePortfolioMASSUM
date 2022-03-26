@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  outline: 0;
+}
+
 .heroSection {
   background-image: url(../../assets/img/heroBgGray1080p-min.jpg);
   background-repeat: no-repeat;
@@ -70,7 +74,7 @@ body {
 }
 .heroSection .heroElements .row .heroCol2 h1 {
   font-size: 4rem;
-  font-family: "Inter", sans-serif;
+  font-family: Mont, sans-serif;
   font-weight: 700;
 }
 .heroSection .heroElements .row .heroCol2 p {
@@ -291,17 +295,21 @@ body {
   font-family: Inter;
   font-weight: 100;
 }
+.projectsSection .projectsOutro .waveTransitionTop {
+  width: 100vw;
+}
 .projectsSection .textDecorationProjects {
   background-image: linear-gradient(90deg, #ff683a, #610068);
-  background-size: 0% 11px;
+  background-size: 0% 5px;
   background-repeat: no-repeat;
   background-position: left bottom;
+  background-position-y: 35px;
   transition: background-size 0.6s ease-in-out;
   text-decoration: none;
   color: #fff;
 }
 .projectsSection .textDecorationProjects:hover {
-  background-size: 100% 11px;
+  background-size: 100% 5px;
 }
 
 .howIWorkSection {
@@ -313,7 +321,7 @@ body {
   opacity: 0.1;
 }
 .howIWorkSection h1 {
-  font-family: Inter;
+  font-family: Mont;
   font-weight: 900;
   font-size: 4.5rem;
   color: #fff;
@@ -321,9 +329,10 @@ body {
 }
 .howIWorkSection h1 span {
   background-image: linear-gradient(90deg, #ef7800, #fef506);
-  background-size: 100% 20px;
+  background-size: 100% 18px;
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-position-y: 68px;
 }
 .howIWorkSection .headingHowIWork {
   margin-top: 8.5rem;
@@ -361,6 +370,165 @@ body {
   z-index: 10;
   padding-top: 5rem;
   width: 80%;
+}
+
+.cta {
+  text-align: center;
+  background-image: url(../../assets/img/ctaBg-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+.cta .waveTransitionBottom {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+.cta h1 {
+  padding-top: 13rem;
+  font-family: Mont;
+  font-size: 5rem;
+}
+.cta p {
+  font-family: Consolas;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.cta .container {
+  padding-top: 3rem;
+}
+.cta .container input {
+  width: 95%;
+  padding: 0.75rem;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  opacity: 0.8;
+  transition: border 0.3s ease-in-out;
+}
+.cta .container input:hover {
+  border: #75b6ff 5px solid;
+}
+.cta .container input::-moz-placeholder {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.cta .container input:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.cta .container input::placeholder {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.cta .container .messasgeRow {
+  padding: 1.25rem 28px;
+}
+.cta .container .messasgeRow textarea {
+  resize: none;
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  opacity: 0.8;
+  transition: border 0.3s ease-in-out;
+}
+.cta .container .messasgeRow textarea::-moz-placeholder {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.cta .container .messasgeRow textarea:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.cta .container .messasgeRow textarea::placeholder {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.cta .container .messasgeRow textarea:hover {
+  border: #75b6ff 5px solid;
+}
+.cta button {
+  border: 5px solid #fff;
+  border-radius: 100px;
+  padding: 0.5rem 1.8rem;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cta button:hover {
+  border: #75b6ff 5px solid;
+  transform: scale(1.1);
+}
+.cta .socialMediaCTA {
+  margin-bottom: 50px;
+}
+.cta .socialMediaCTA .container {
+  padding-top: 30px;
+}
+.cta .socialMediaCTA p {
+  text-align: right;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.cta .socialMediaCTA ul {
+  text-align: left;
+  list-style-type: none;
+}
+.cta .socialMediaCTA ul li {
+  margin: 0.15rem 1rem;
+  display: inline;
+}
+.cta .socialMediaCTA ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.cta .socialMediaCTA ul li a:hover {
+  color: #75b6ff;
+}
+.cta footer .footerNav {
+  background-color: #fff;
+  border-radius: 1000px;
+  margin-top: 0.75rem;
+}
+.cta footer .footerNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cta footer .footerNav ul li {
+  display: inline;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: background-color 0.5s ease-in-out;
+}
+.cta footer .footerNav ul li:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #000;
+}
+.cta footer .footerNav ul li:hover a {
+  transition: color 0.5s ease-in-out;
+  color: #fff;
+}
+.cta footer .footerNav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.cta footer .copyright p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 @font-face {

@@ -4,6 +4,9 @@ body {
   user-select: none;
   overflow-x: hidden;
 }
+* {
+  outline: 0;
+}
 .heroSection {
   background-image: url(../../assets/img/heroBgGray1080p-min.jpg);
   background-repeat: no-repeat;
@@ -70,7 +73,7 @@ body {
         padding-left: 0;
         h1 {
           font-size: 4rem;
-          font-family: "Inter", sans-serif;
+          font-family: Mont, sans-serif;
           font-weight: 700;
         }
         p {
@@ -300,17 +303,21 @@ body {
       font-family: Inter;
       font-weight: 100;
     }
+    .waveTransitionTop {
+      width: 100vw;
+    }
   }
   .textDecorationProjects {
     background-image: linear-gradient(90deg, #ff683a, #610068);
-    background-size: 0% 11px;
+    background-size: 0% 5px;
     background-repeat: no-repeat;
     background-position: left bottom;
+    background-position-y: 35px;
     transition: background-size 0.6s ease-in-out;
     text-decoration: none;
     color: #fff;
     &:hover {
-      background-size: 100% 11px;
+      background-size: 100% 5px;
     }
   }
 }
@@ -321,40 +328,41 @@ body {
     rgba(141, 55, 254, 1) 100%
   );
   position: relative;
-  .city{
+  .city {
     position: absolute;
-    opacity: .1;
+    opacity: 0.1;
   }
   h1 {
-    font-family: Inter;
+    font-family: Mont;
     font-weight: 900;
     font-size: 4.5rem;
     color: #fff;
     text-align: center;
     span {
       background-image: linear-gradient(90deg, #ef7800, #fef506);
-      background-size: 100% 20px;
+      background-size: 100% 18px;
       background-position: left bottom;
       background-repeat: no-repeat;
+      background-position-y: 68px;
     }
   }
-  .headingHowIWork{
+  .headingHowIWork {
     margin-top: 8.5rem;
-    span{
-    font-size: 3rem;
-    font-family: Inter;
-    font-weight: 700;
-    color: #fff;
-    line-height: 45px;
-    vertical-align: middle;
-    position: relative;
-    z-index: 10;
+    span {
+      font-size: 3rem;
+      font-family: Inter;
+      font-weight: 700;
+      color: #fff;
+      line-height: 45px;
+      vertical-align: middle;
+      position: relative;
+      z-index: 10;
     }
-    img{
+    img {
       width: 7%;
     }
   }
-  p{
+  p {
     font-size: 1.5rem;
     color: #fff;
     font-family: Roboto;
@@ -364,16 +372,160 @@ body {
     letter-spacing: 1px;
     margin-bottom: 0;
     position: relative;
-    z-index: 10
+    z-index: 10;
   }
-  .bold{
+  .bold {
     font-weight: 700;
   }
-  .container-fluid{
+  .container-fluid {
     position: relative;
     z-index: 10;
     padding-top: 5rem;
     width: 80%;
+  }
+}
+.cta {
+  text-align: center;
+  background-image: url(../../assets/img/ctaBg-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  .waveTransitionBottom {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+  }
+  h1 {
+    padding-top: 13rem;
+    font-family: Mont;
+    font-size: 5rem;
+  }
+  p {
+    font-family: Consolas;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .container {
+    padding-top: 3rem;
+    input {
+      width: 95%;
+      padding: 0.75rem;
+      border-radius: 20px;
+      border: 5px solid #fff;
+      opacity: 0.8;
+      transition: border 0.3s ease-in-out;
+      &:hover {
+        border: #75b6ff 5px solid;
+      }
+      &::placeholder {
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+    }
+    .messasgeRow {
+      padding: 1.25rem 28px;
+      textarea {
+        resize: none;
+        position: relative;
+        z-index: 1;
+        padding: 1rem;
+        border-radius: 20px;
+        border: 5px solid #fff;
+        opacity: 0.8;
+        &::placeholder {
+          font-style: italic;
+          font-size: 1.2rem;
+        }
+        transition: border 0.3s ease-in-out;
+        &:hover {
+          border: #75b6ff 5px solid;
+        }
+      }
+    }
+  }
+  button {
+    border: 5px solid #fff;
+    border-radius: 100px;
+    padding: 0.5rem 1.8rem;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+    &:hover {
+      border: #75b6ff 5px solid;
+      transform: scale(1.1);
+    }
+  }
+  .socialMediaCTA {
+    .container {
+      padding-top: 30px;
+    }
+    margin-bottom: 50px;
+    p {
+      text-align: right;
+      font-family: Roboto;
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
+    ul {
+      text-align: left;
+      list-style-type: none;
+      li {
+        margin: 0.15rem 1rem;
+        display: inline;
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: #75b6ff;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .footerNav{
+      background-color: #fff;
+      border-radius: 1000px;
+      margin-top: .75rem;
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        li{
+          display: inline;
+          padding: 1rem 2rem;
+          border-radius: 50px;
+          transition: background-color .5s ease-in-out;
+          &:hover{
+            transition: background-color .5s ease-in-out;
+            background-color: #000;
+            a{
+              transition: color .5s ease-in-out;
+              color: #fff;
+            }
+          }
+          a{
+            color: #000;
+            text-decoration: none;
+            font-family: Roboto;
+            font-weight: 300;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .copyright p{
+        font-family: Roboto;
+        font-weight: 100;
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
   }
 }
 @font-face {
