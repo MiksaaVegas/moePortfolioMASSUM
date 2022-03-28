@@ -4,11 +4,13 @@
 - **Adobe Photoshop 2021**
 - **Adobe Lightroom Classic 2022**
 - **Adobe XD**
-- **[Haikei](https://app.haikei.app/)**
+- **Haikei**
 - **HTML5**
 - **CSS3, SCSS**
 - **Bootstrap 5**
 - **Google Fonts**
+- **Flaticon**
+- **JavaScript**
 ### Namena
 Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM.
 ### Tek na nastani
@@ -43,3 +45,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *23.03* Zavrshena sekcijata za nachinot na koj rabotam.
 
 - *26.03* Zavrshen stilot na poslednata sekcija. Mali popravki niz celata strana.
+
+- *28.03* Napravena funkcionalnosta na CTA sekcijata. Linkovite funkcionalni.

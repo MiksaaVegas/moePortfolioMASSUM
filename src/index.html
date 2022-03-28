@@ -14,11 +14,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&family=Open+Sans:wght@700&family=Raleway:wght@200;300&family=Roboto:wght@100;300;400;900&display=swap"
     rel="stylesheet">
+  </script>
 </head>
 
 <body>
   <!--HERO SECTION-->
-  <section class="heroSection">
+  <section class="heroSection" id="pocetna">
     <nav>
       <div class="container">
         <div class="row">
@@ -26,10 +27,10 @@
           <div class="col-md-8 navLinks">
             <ul>
               <li><a href="#">Почетна</a></li>
-              <li><a href="#">За мене</a></li>
-              <li><a href="#">Проекти</a></li>
-              <li><a href="#">Моите услуги</a></li>
-              <li><a href="#">Контакт</a></li>
+              <li><a href="#aboutMe">За мене</a></li>
+              <li><a href="#projects">Проекти</a></li>
+              <li><a href="#moiteUslugi">Моите услуги</a></li>
+              <li><a href="#cta">Контакт</a></li>
             </ul>
           </div>
         </div>
@@ -46,12 +47,12 @@
         </div>
         <div class="col-md-8 heroCol2">
           <h1>Здраво, <br>јас сум Михаил</h1>
-          <p>Професионално се занимавам со дизајн на <br> веб-страни и програмирам на истите.</p>
+          <p>Професионално се занимавам со дизајн на <br> веб-страни</p>
         </div>
         <div class="col-md-2 heroCol4">
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/miksaa.16/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                   class="bi bi-instagram" viewBox="0 0 16 16">
                   <path
@@ -60,7 +61,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/MiksaaVegas">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
                   viewBox="0 0 16 16">
                   <path
@@ -69,7 +70,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="mailto:kuzmanoskimihail9@gmail.com">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                   class="bi bi-envelope" viewBox="0 0 16 16">
                   <path
@@ -89,7 +90,7 @@
     </div>
   </section>
   <!-- ABOUT ME SECTION -->
-  <section class="aboutMeSection">
+  <section class="aboutMeSection" id="aboutMe">
     <h1>Кој сум јас?</h1>
     <div class="container">
       <div class="row">
@@ -138,10 +139,10 @@
     <img src="../assets/img/blobAboutMe5.png" alt="" class="blob blob5 img-fluid">
   </section>
   <!-- PROJECTS SECTION -->
-  <section class="projectsSection">
+  <section class="projectsSection" id="projects">
     <h1>Проекти</h1>
     <h2>и настани</h2>
-    <p class="projectsSectionDesc">Освен со веб-дизајн, се занимавам со доста други работи кога имам слободно време.
+    <p class="projectsSectionDesc">Освен со веб-дизајн како главна работа, се занимавам со доста други работи кога имам слободно време.
       Интересно ми е едитирањето слики и мотажата на видеа. Повеќе можеш да прочиташ подоле.
     </p>
     <div class="projects container">
@@ -201,7 +202,7 @@
     </div>
   </section>
   <!-- HOW I WORK SECTION -->
-  <section class="howIWorkSection">
+  <section class="howIWorkSection" id="moiteUslugi">
     <img src="../assets/img/city.png" alt="" class="city img-fluid">
     <h1><span>Како јас помагам?</span></h1>
     <div class="container">
@@ -232,19 +233,20 @@
       </p>
     </div>
   </section>
-  <section class="cta">
+  <!-- CALL TO ACTION -->
+  <section class="cta" id="cta">
     <img src="../assets/img/WavesHowIWorkSRC2.svg" alt="" class="img-fluid waveTransitionBottom">
     <h1>Повикај ме</h1>
     <p>Доколку би сакал да ти креирам твоја модерна и професионална веб-страна</p>
     <div class="container">
       <div class="row">
-        <div class="col-md-6"><input type="text" placeholder="Вашето име"></div>
-        <div class="col-md-6"><input type="email" placeholder="Вашиот имејл"></div>
+        <div class="col-md-6"><input type="text" placeholder="Вашето име" class="inputName"></div>
+        <div class="col-md-6"><input type="email" placeholder="Вашиот имејл" class="inputEmail"></div>
       </div>
-      <div class="row messasgeRow"><textarea rows="8" placeholder="Вашата порака"></textarea>
+      <div class="row messasgeRow"><textarea rows="8" placeholder="Вашата порака" class="inputMessage"></textarea>
       </div>
     </div>
-    <button type="submit">Испрати порака</button>
+    <button type="submit" onclick="sendMsg()">Испрати порака</button>
     <div class="socialMediaCTA">
       <div class="container">
         <div class="row">
@@ -254,7 +256,7 @@
           <div class="col-md-6">
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/miksaa.16/">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                     class="bi bi-instagram" viewBox="0 0 16 16">
                     <path
@@ -263,7 +265,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/MiksaaVegas">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                     class="bi bi-github" viewBox="0 0 16 16">
                     <path
@@ -272,7 +274,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="mailto:kuzmanoskimihail9@gmail.com">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                     class="bi bi-envelope" viewBox="0 0 16 16">
                     <path
@@ -294,14 +296,19 @@
           <div class="col-md-6">
             <div class="footerNav">
               <ul>
-                <li><a href="#">Почетна</a></li>
-                <li><a href="#">За мене</a></li>
-                <li><a href="#">Проекти</a></li>
-                <li><a href="#">Моите Услуги</a></li>
+                <li><a href="#pocetna">Почетна</a></li>
+                <li><a href="#aboutMe">За мене</a></li>
+                <li><a href="#projects">Проекти</a></li>
+                <li><a href="#moiteUslugi">Моите Услуги</a></li>
               </ul>
             </div>
             <div class="copyright">
               <p>Copyright &copy; Mihail Kuzmanoski - Miksaa 2022</p>
+              <div class="iconsCredits">Icons made by <a
+                href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a
+                href="https://www.freepik.com" title="Freepik">Freepik</a> from
+              <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              </div>
             </div>
           </div>
         </div>
@@ -314,6 +321,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

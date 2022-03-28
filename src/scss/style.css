@@ -6,6 +6,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -529,6 +530,15 @@ body {
   font-weight: 100;
   font-size: 1.5rem;
   margin-top: 2.5rem;
+  margin-bottom: 0%;
+}
+.cta footer .iconsCredits {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+.cta footer .iconsCredits a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
 @font-face {
