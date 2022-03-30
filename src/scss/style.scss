@@ -124,9 +124,11 @@ body {
 }
 .aboutMeSection {
   padding-top: 5rem;
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
   position: relative;
   text-align: center;
+  z-index: 20;
+  background-color: #fff;
   h1 {
     font-size: 5.25rem;
     font-family: Raleway;
@@ -528,13 +530,83 @@ body {
       margin-top: 2.5rem;
       margin-bottom: 0%;
     }
-    .iconsCredits{
-      opacity: .7;
-      font-size: .85rem;
-      a{
+    .iconsCredits {
+      opacity: 0.7;
+      font-size: 0.85rem;
+      a {
         text-decoration: none;
-      color: #fafafa;
+        color: #fafafa;
       }
+    }
+  }
+}
+.sertifikatiSection {
+  position: relative;
+  h1 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-family: Mont;
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 3rem;
+  }
+  p {
+    font-weight: 500;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 120px;
+  }
+  .background {
+    width: 100vw;
+    min-height: 750px;
+    background: #3e1e68;
+  }
+  .swiper {
+    width: 600px;
+    height: 500px;    
+  }
+  .swiperContainer{
+    margin-top: 14rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .background span {
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 15vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    $colors: (#583c87, #e45a84, #ffacac);
+    @for $i from 1 through 15 {
+      &:nth-child(#{$i}) {
+        color: nth($colors, random(length($colors)));
+        top: random(100) * 1%;
+        left: random(100) * 1%;
+        animation-duration: (random(6s * 10) / 10) * 1s + 10s;
+        animation-delay: random((6s + 10s) * 10) / 10 * -1s;
+        transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+        $blurRadius: (random() + 0.5) * 15vmin * 0.5;
+        $x: if(random() > 0.5, -1, 1);
+        box-shadow: (15vmin * 2 * $x) 0 $blurRadius currentColor;
+      }
+    }
+  }
+  @keyframes move {
+    100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
     }
   }
 }

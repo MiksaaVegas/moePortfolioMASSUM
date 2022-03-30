@@ -11,6 +11,7 @@
 - **Google Fonts**
 - **Flaticon**
 - **JavaScript**
+- **SwiperJS**
 ### Namena
 Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM.
 ### Tek na nastani
@@ -47,3 +48,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *26.03* Zavrshen stilot na poslednata sekcija. Mali popravki niz celata strana.
 
 - *28.03* Napravena funkcionalnosta na CTA sekcijata. Linkovite funkcionalni.
+
+- *30.03* Napravena sekcija za sertifikatite.

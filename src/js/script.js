@@ -29,3 +29,7 @@ function sendMsg() {
     email.style.border = "5px solid #ff0000";
   }
 }
+const swiper = new Swiper('.swiper', {
+  effect: "cards",
+  grabCursor: true,
+})
