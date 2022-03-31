@@ -200,39 +200,34 @@ body {
     position: absolute;
   }
   .blob1 {
-    top: 0;
-    right: 0;
+    top: 5rem;
+    right: 4rem;
     z-index: -1;
-    transform: rotate(-53deg);
-    width: 20%;
+    width: 15%;
   }
   .blob2 {
-    top: 20%;
-    left: 10%;
+    top: 11%;
+    left: 5%;
     z-index: -1;
-    transform: rotate(45deg);
-    width: 10%;
+    width: 19%;
   }
   .blob3 {
-    top: 35%;
-    left: 46%;
-    z-index: -2;
-    transform: rotate(45deg);
-    width: 14%;
+    top: 34%;
+    left: 48%;
+    z-index: -1;
+    width: 17%;
   }
   .blob4 {
     top: 60%;
-    left: 8%;
+    left: 2%;
     z-index: -1;
-    transform: rotate(45deg);
-    width: 18%;
+    width: 17%;
   }
   .blob5 {
-    top: 69%;
-    right: 8%;
+    bottom: 10%;
+    right: 4%;
     z-index: -1;
-    transform: rotate(45deg);
-    width: 12%;
+    width: 16%;
   }
 }
 .projectsSection {
@@ -569,7 +564,7 @@ body {
     background: #3e1e68;
   }
   .swiper {
-    width: 600px;
+    max-width: 600px;
     height: 500px;    
   }
   .swiperContainer{

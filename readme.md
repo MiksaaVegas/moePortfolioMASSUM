@@ -50,3 +50,5 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *28.03* Napravena funkcionalnosta na CTA sekcijata. Linkovite funkcionalni.
 
 - *30.03* Napravena sekcija za sertifikatite.
+
+- *01.04* Animirani meurchinjata vo sekcijata za mene.
