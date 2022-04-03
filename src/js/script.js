@@ -1,6 +1,10 @@
 const inputName = document.querySelector(".inputName")
 const email = document.querySelector(".inputEmail")
 const message = document.querySelector(".inputMessage")
+const modal = document.querySelector("dialog")
+const openModalBtn = document.querySelector(".globe")
+const closeModalBtn = document.querySelector(".dialogButton")
+const backToTopBtn = document.querySelector(".backToTop")
 function sendMsg() {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
     if (inputName.value.length > 2) {
@@ -29,22 +33,30 @@ function sendMsg() {
     email.style.border = "5px solid #ff0000"
   }
 }
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiperSertifikati", {
   effect: "cards",
   grabCursor: true,
 })
-const tween = KUTE.fromTo(
-  "#path1",
-  { path: "#path1" },
-  { path: "#path2" },
-  { repeat: 999, duration: 2000, yoyo: true }
-)
-const tween2 = KUTE.fromTo(
-  "#path3",
-  { path: "#path3" },
-  { path: "#path4" },
-  { repeat: 999, duration: 1700, yoyo: true }
-)
+const swiper2 = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraion: true,
+  },
+  grabCursor: true,
+  mousewheel: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+})
 const tween3 = KUTE.fromTo(
   "#path5",
   { path: "#path5" },
@@ -57,14 +69,41 @@ const tween4 = KUTE.fromTo(
   { path: "#path8" },
   { repeat: 999, duration: 1800, yoyo: true }
 )
-const tween5 = KUTE.fromTo(
-  "#path9",
-  { path: "#path9" },
-  { path: "#path10" },
-  { repeat: 999, duration: 1800, yoyo: true }
-)
-tween.start()
-tween2.start()
 tween3.start()
 tween4.start()
-tween5.start()
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'instant'
+  })
+}
+function disableScrolling() {
+  window.addEventListener('scroll', scrollToTop, true)
+}
+function enableScrolling() {
+  window.removeEventListener('scroll', scrollToTop, true)
+}
+openModalBtn.addEventListener('click', function () {
+  modal.showModal()
+  disableScrolling()
+})
+closeModalBtn.addEventListener('click', function () {
+  modal.close()
+  enableScrolling()
+})
+document.addEventListener('scroll', function () {
+  if(window.pageYOffset >= 1500){
+    backToTopBtn.style.opacity = 1
+  }
+  else{
+    backToTopBtn.style.opacity = 0
+  }
+})
+backToTopBtn.addEventListener('click', function (){
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  })
+})

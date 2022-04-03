@@ -7,163 +7,690 @@ body {
           user-select: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 * {
   outline: 0;
 }
 
-.heroSection {
-  background-image: url(../../assets/img/heroBgGray1080p-min.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
+::-webkit-scrollbar {
+  display: none;
 }
-.heroSection nav {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, black 95%);
-  padding: 1rem 0;
+
+.backToTop {
+  opacity: 0;
 }
-.heroSection nav .navLogo {
-  width: 70%;
-}
-.heroSection nav .navLinks ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-}
-.heroSection nav .navLinks ul li {
-  display: inline;
-  font-family: Montserrat, sans-serif;
-  font-size: 1.5rem;
-}
-.heroSection nav .navLinks ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease-in-out;
-}
-.heroSection nav .navLinks ul li a:hover {
-  color: #db4900;
-}
-.heroSection .heroElements {
-  position: relative;
-}
-.heroSection .heroElements .row {
-  padding-top: 10rem;
-}
-.heroSection .heroElements .row .heroCol1 .flagsContainer {
-  width: 15%;
-  margin-left: 2rem;
-  padding-top: 3rem;
-  padding-right: 0;
-}
-.heroSection .heroElements .row .heroCol1 .flagsContainer img {
-  margin: 0.75rem auto;
-  filter: grayscale(90%);
-  transition: filter 0.3s ease-in-out;
+.backToTop img {
+  width: 50px;
+  position: fixed;
+  z-index: 1000000;
+  bottom: 3vh;
+  right: 2vw;
+  background-color: #560eb6;
+  padding: 1rem;
+  border-radius: 1000px;
   cursor: pointer;
 }
-.heroSection .heroElements .row .heroCol1 .flagsContainer img:hover {
-  filter: grayscale(0);
+
+.heroSection {
+  height: 100vh;
+  position: relative;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../img/backgrounds/heroBG.jpg);
 }
-.heroSection .heroElements .row .heroCol2 {
-  height: 49rem;
-  text-shadow: 0px 0px 13px #000000;
+.heroSection .heroText {
+  margin-top: calc(5rem + 25vh);
+  margin-left: 5rem;
   color: #fff;
-  padding-left: 0;
+  padding: 0 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.heroSection .heroElements .row .heroCol2 h1 {
-  font-size: 4rem;
-  font-family: Mont, sans-serif;
-  font-weight: 700;
+.heroSection .heroText h1 {
+  padding-top: 2rem;
+  font-family: Consolas;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 3rem;
 }
-.heroSection .heroElements .row .heroCol2 p {
-  font-family: "Raleway", "Times New Roman";
-  font-size: 1.5rem;
+.heroSection .heroText h2 {
+  font-family: Roboto;
+  font-weight: 100;
+  font-style: italic;
 }
-.heroSection .heroElements .row .heroCol4 ul {
-  list-style-type: none;
-  padding-right: 3rem;
-  margin: 0;
+.heroSection .heroText .heroButtons {
+  padding-bottom: 1rem;
 }
-.heroSection .heroElements .row .heroCol4 ul li {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1.5rem 0;
-}
-.heroSection .heroElements .row .heroCol4 ul li a {
-  width: 50px;
-  text-align: center;
+.heroSection .heroText .heroButtons a {
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 1rem;
+  font-family: consolas;
+  letter-spacing: 2px;
   color: #fff;
+  font-size: 1.75rem;
+}
+.heroSection .heroText .heroButtons a:hover {
+  background-color: #96009e;
+  box-shadow: 0 0 3px #96009e, 0 0 5px #96009e, 0 0 10px #96009e, 0 0 20px #96009e;
+  transition-delay: 1s;
+}
+.heroSection .heroText .heroButtons a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.heroSection .heroText .heroButtons a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.heroSection .heroText .heroButtons a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.heroSection .heroText .heroButtons a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+.heroSection .heroText .heroButtons a span {
+  position: absolute;
+  display: block;
+}
+.heroSection .heroText .heroButtons a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #96009e);
+}
+.heroSection .heroText .heroButtons a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #96009e);
+}
+.heroSection .heroText .heroButtons a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, #96009e);
+}
+.heroSection .heroText .heroButtons a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #96009e);
+}
+.heroSection .heroText .heroButtons a:nth-child(1) {
+  margin-left: -0.5rem;
+}
+.heroSection .globe {
+  position: absolute;
+  color: #fff;
+  top: 3%;
+  left: 2%;
+  cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-.heroSection .heroElements .row .heroCol4 ul li a:hover {
-  color: #db4900;
+.heroSection .globe:hover {
+  color: #d403df;
 }
-.heroSection .heroElements .heroArrow {
+.heroSection dialog {
+  border: none;
+  border-radius: 20px;
+}
+.heroSection dialog h1 {
+  text-align: center;
+  font-family: Inter;
+  font-weight: 800;
+  color: #000;
+}
+.heroSection dialog a {
+  background-color: transparent;
+  border: 0;
+  padding: 0%;
+  margin: 0.5rem !important;
+}
+.heroSection dialog img {
+  filter: grayscale(0.8);
+  transition: filter 0.4s ease-in-out;
+}
+.heroSection dialog img:hover {
+  filter: grayscale(0);
+  transition: filter 0.4s ease-in-out;
+}
+.heroSection dialog .dialogButton {
+  display: flex;
+  justify-content: center;
+}
+.heroSection dialog .dialogButton button {
+  background-color: #fff;
+  color: #f54538;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 0.3rem 0.75rem;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+.heroSection dialog .dialogButton button:hover {
+  border: 1px solid #f54538;
+}
+.heroSection dialog::-webkit-backdrop {
+  background-color: rgba(26, 0, 22, 0.7);
+}
+.heroSection dialog::backdrop {
+  background-color: rgba(26, 0, 22, 0.7);
+}
+.heroSection .scrollIndicatorLink {
+  border: 0;
+  background-color: transparent;
+}
+.heroSection .scrollIndicatorLink img {
+  width: 3%;
   position: absolute;
-  bottom: 10%;
-  left: 46vw;
+  bottom: 5vh;
+  left: 48%;
+  right: auto;
+  transition: bottom 0.3s ease-in-out;
+}
+.heroSection .scrollIndicatorLink img:hover {
+  bottom: 3vh;
+}
+
+.projectsSection {
+  background-image: url(../../img/backgrounds/blobBgProjects.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
-  transition: bottom 0.6s ease-in-out;
+  z-index: 0;
+  position: relative;
+  padding-bottom: 8rem;
 }
-.heroSection .heroElements .heroArrow:hover {
-  bottom: 5%;
+.projectsSection .projectsText {
+  padding-top: 10rem;
+  padding-left: 6rem;
 }
-.heroSection .heroElements .jas {
+.projectsSection .projectsText a {
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 700;
+  color: #fff;
+}
+.projectsSection .projectsText a:hover {
+  background-color: #f55d05;
+  box-shadow: 0 0 3px #f55d05, 0 0 5px #f55d05, 0 0 10px #f55d05, 0 0 20px #f55d05;
+  transition-delay: 1s;
+}
+.projectsSection .projectsText a:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.projectsSection .projectsText a:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.projectsSection .projectsText a:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.projectsSection .projectsText a:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+.projectsSection .projectsText a span {
   position: absolute;
-  bottom: 10%;
-  right: 20%;
+  display: block;
+}
+.projectsSection .projectsText a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f55d05);
+}
+.projectsSection .projectsText a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f55d05);
+}
+.projectsSection .projectsText a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, #f55d05);
+}
+.projectsSection .projectsText a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f55d05);
+}
+.projectsSection .projectsText h1 {
+  padding-top: 5rem;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-family: Mont;
+  margin: 0;
+}
+.projectsSection .projectsText h2 {
+  font-family: Pacifico;
+  font-size: 3.5rem;
+  line-height: 3rem;
+}
+.projectsSection .projectsText .projectsSectionDesc {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.projectsSection .projectsSwiper {
+  padding: 0;
+  padding-right: 4rem;
+  position: relative;
+}
+.projectsSection .projectsSwiper .swiper-pagination-bullet {
+  background-color: #fff;
+}
+.projectsSection .projectsSwiper .swiper-navigation {
+  background-color: #fff;
+}
+.projectsSection .projectsSwiper .swiper {
+  max-height: 600px;
+  margin-top: 10rem;
+}
+.projectsSection .projectsSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectsSection .projectsSwiper .swiper-slide a {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, #f55d05, #47008f);
+  background-size: 0% 5px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-position-y: 35px;
+  transition: 0.3s ease-in-out;
+}
+.projectsSection .projectsSwiper .swiper-slide a:hover {
+  background-size: 100% 5px;
+}
+.projectsSection .projectsSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projectsSection .projectsSwiper .projectDesc {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease-in-out;
+}
+.projectsSection .projectsSwiper .projectDesc:hover {
+  opacity: 1;
+}
+.projectsSection .projectsSwiper .projectDesc p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Open Sans";
+}
+.projectsSection .scrollIndicatorLink {
+  border: 0;
+  background-color: transparent;
+}
+.projectsSection .scrollIndicatorLink .scrollIndicator {
+  width: 3%;
+  position: absolute;
+  left: 48%;
+  bottom: 5vh;
+  z-index: 100;
+  transition: bottom 0.3s ease-in-out;
+}
+.projectsSection .scrollIndicatorLink .scrollIndicator:hover {
+  bottom: 3vh;
+}
+
+.sertifikatiSection {
+  position: relative;
+  overflow: hidden;
+}
+.sertifikatiSection h1 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  font-family: Mont;
+  font-size: 4rem;
+  color: #fff;
+  padding-top: 3rem;
+}
+.sertifikatiSection p {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  top: 120px;
+}
+.sertifikatiSection .background {
+  width: 100vw;
+  min-height: 1000px;
+  background: #1c013f;
+}
+.sertifikatiSection .swiper {
+  max-width: 40vw;
+}
+.sertifikatiSection .swiperContainer {
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sertifikatiSection .background span {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 15vmin;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.sertifikatiSection .background span:nth-child(1) {
+  color: #e45a84;
+  top: 67%;
+  left: 20%;
+  -webkit-animation-duration: 15.2s;
+          animation-duration: 15.2s;
+  -webkit-animation-delay: -8.1s;
+          animation-delay: -8.1s;
+  transform-origin: 4vw 8vh;
+  box-shadow: -30vmin 0 6.2891063983vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(2) {
+  color: #e45a84;
+  top: 97%;
+  left: 42%;
+  -webkit-animation-duration: 15.2s;
+          animation-duration: 15.2s;
+  -webkit-animation-delay: -10.2s;
+          animation-delay: -10.2s;
+  transform-origin: 7vw 8vh;
+  box-shadow: 30vmin 0 10.9401985751vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(3) {
+  color: #ffacac;
+  top: 29%;
+  left: 77%;
+  -webkit-animation-duration: 15.9s;
+          animation-duration: 15.9s;
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  transform-origin: -11vw 3vh;
+  box-shadow: 30vmin 0 9.970847766vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(4) {
+  color: #ffacac;
+  top: 35%;
+  left: 21%;
+  -webkit-animation-duration: 10.8s;
+          animation-duration: 10.8s;
+  -webkit-animation-delay: -15.5s;
+          animation-delay: -15.5s;
+  transform-origin: 10vw -24vh;
+  box-shadow: -30vmin 0 11.0259756458vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(5) {
+  color: #ffacac;
+  top: 29%;
+  left: 4%;
+  -webkit-animation-duration: 12.7s;
+          animation-duration: 12.7s;
+  -webkit-animation-delay: -9.3s;
+          animation-delay: -9.3s;
+  transform-origin: -5vw 5vh;
+  box-shadow: 30vmin 0 3.9292603537vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(6) {
+  color: #583c87;
+  top: 60%;
+  left: 50%;
+  -webkit-animation-duration: 14.2s;
+          animation-duration: 14.2s;
+  -webkit-animation-delay: -13.9s;
+          animation-delay: -13.9s;
+  transform-origin: 4vw 6vh;
+  box-shadow: 30vmin 0 6.8211172326vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(7) {
+  color: #ffacac;
+  top: 26%;
+  left: 90%;
+  -webkit-animation-duration: 13.8s;
+          animation-duration: 13.8s;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  transform-origin: 2vw -22vh;
+  box-shadow: -30vmin 0 10.9491930646vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(8) {
+  color: #583c87;
+  top: 97%;
+  left: 50%;
+  -webkit-animation-duration: 11.3s;
+          animation-duration: 11.3s;
+  -webkit-animation-delay: -15.7s;
+          animation-delay: -15.7s;
+  transform-origin: 7vw 10vh;
+  box-shadow: 30vmin 0 10.7441264086vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(9) {
+  color: #583c87;
+  top: 19%;
+  left: 81%;
+  -webkit-animation-duration: 12.3s;
+          animation-duration: 12.3s;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  transform-origin: -24vw -10vh;
+  box-shadow: 30vmin 0 5.0175550135vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(10) {
+  color: #ffacac;
+  top: 57%;
+  left: 97%;
+  -webkit-animation-duration: 12.1s;
+          animation-duration: 12.1s;
+  -webkit-animation-delay: -7.7s;
+          animation-delay: -7.7s;
+  transform-origin: 9vw -13vh;
+  box-shadow: 30vmin 0 4.2657215019vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(11) {
+  color: #e45a84;
+  top: 12%;
+  left: 10%;
+  -webkit-animation-duration: 13.3s;
+          animation-duration: 13.3s;
+  -webkit-animation-delay: -4.8s;
+          animation-delay: -4.8s;
+  transform-origin: -18vw 6vh;
+  box-shadow: -30vmin 0 3.7870457296vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(12) {
+  color: #583c87;
+  top: 72%;
+  left: 53%;
+  -webkit-animation-duration: 14.8s;
+          animation-duration: 14.8s;
+  -webkit-animation-delay: -4.9s;
+          animation-delay: -4.9s;
+  transform-origin: 10vw -11vh;
+  box-shadow: 30vmin 0 4.9196154531vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(13) {
+  color: #583c87;
+  top: 32%;
+  left: 81%;
+  -webkit-animation-duration: 15.6s;
+          animation-duration: 15.6s;
+  -webkit-animation-delay: -8.6s;
+          animation-delay: -8.6s;
+  transform-origin: 1vw -23vh;
+  box-shadow: 30vmin 0 6.1637028033vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(14) {
+  color: #ffacac;
+  top: 59%;
+  left: 33%;
+  -webkit-animation-duration: 11.5s;
+          animation-duration: 11.5s;
+  -webkit-animation-delay: -11.9s;
+          animation-delay: -11.9s;
+  transform-origin: 2vw 1vh;
+  box-shadow: -30vmin 0 8.340749684vmin currentColor;
+}
+.sertifikatiSection .background span:nth-child(15) {
+  color: #583c87;
+  top: 83%;
+  left: 3%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: -6.6s;
+          animation-delay: -6.6s;
+  transform-origin: -20vw 9vh;
+  box-shadow: -30vmin 0 10.2715133328vmin currentColor;
+}
+.sertifikatiSection .scrollContainer .scrollIndicatorLink {
+  border: 0;
+  background-color: transparent;
+}
+.sertifikatiSection .scrollContainer .scrollIndicatorLink .scrollIndicator {
+  width: 3%;
+  position: absolute;
+  left: 48%;
+  bottom: 5vh;
+  z-index: 100;
+  transition: bottom 0.3s ease-in-out;
+}
+.sertifikatiSection .scrollContainer .scrollIndicatorLink .scrollIndicator:hover {
+  bottom: 3vh;
+}
+@-webkit-keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
 }
 
 .aboutMeSection {
-  padding-top: 5rem;
-  padding-bottom: 8rem;
   position: relative;
   text-align: center;
   z-index: 20;
-  background-color: #fff;
+  background-image: url(../../img/backgrounds/aboutMePhoto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
 }
 .aboutMeSection h1 {
   font-size: 5.25rem;
-  font-family: Raleway;
-  color: #000000;
-  margin-bottom: 8rem;
+  font-family: Mont;
+  color: #fff;
+  margin-bottom: 2rem;
   display: inline-block;
-  background-image: linear-gradient(#00ffb1, #00ffb1);
+  background-image: linear-gradient(#af15cb, #d403df);
   background-size: 100% 12px;
   background-repeat: no-repeat;
-  background-position: left 70px;
+  background-position: left bottom;
 }
 .aboutMeSection p {
-  text-align: left;
-  font-family: Inter;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: "Open Sans";
   font-size: 1.4rem;
+  color: #fff;
 }
 .aboutMeSection .row {
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
-.aboutMeSection .row .jasAboutMeCol {
-  text-align: center;
+.aboutMeSection .row .aboutMeText {
+  text-align: left;
+  padding-left: 6rem;
+  padding-top: 6rem;
+  padding-right: 3rem;
 }
-.aboutMeSection .row .jasAboutMeCol img {
-  width: 20%;
+.aboutMeSection .row .aboutMeImg {
+  padding: 0;
 }
 .aboutMeSection .row .customAboutMeText {
   font-size: 6rem;
   font-family: Roboto;
   font-weight: 900;
-  color: #00ffb1;
-  text-shadow: 0px 6px 0px #03bf85, 0px 12px 0px #00714e;
-  line-height: 0rem;
+  color: #d403df;
+  text-shadow: 0px 6px 0px #96009e, 0px 12px 0px #5e0063;
+  line-height: 1rem;
   position: relative;
   z-index: -10;
 }
 .aboutMeSection .quoteContainer {
   margin: 0;
+  padding-top: 5rem;
   position: relative;
 }
 .aboutMeSection .quoteContainer img {
@@ -175,148 +702,60 @@ body {
 .aboutMeSection .quoteContainer img:nth-child(3) {
   transform: rotate(-190deg);
   right: 9%;
-  top: 2%;
+  top: -3%;
 }
 .aboutMeSection .quoteContainer img:nth-child(1) {
   left: 9%;
-  top: 25%;
+  top: 30%;
 }
 .aboutMeSection .quoteContainer .quote {
   font-family: TropicalAsian;
   font-size: 8rem;
-  color: #000000;
+  color: #fff;
   text-align: center;
 }
 .aboutMeSection .quoteContainer .rapper {
-  font-family: Inter;
+  font-family: Roboto;
   font-weight: 300;
   text-align: center;
+  margin-top: -3rem;
+  font-style: italic;
+  font-weight: 100;
 }
 .aboutMeSection .blob {
   position: absolute;
 }
-.aboutMeSection .blob1 {
-  top: 5rem;
-  right: 4rem;
-  z-index: -1;
-  width: 15%;
-}
-.aboutMeSection .blob2 {
-  top: 11%;
-  left: 5%;
-  z-index: -1;
-  width: 19%;
-}
-.aboutMeSection .blob3 {
-  top: 34%;
-  left: 48%;
-  z-index: -1;
-  width: 17%;
-}
 .aboutMeSection .blob4 {
-  top: 60%;
+  bottom: 20%;
   left: 2%;
   z-index: -1;
-  width: 17%;
+  width: 12%;
 }
 .aboutMeSection .blob5 {
-  bottom: 10%;
+  bottom: 20%;
   right: 4%;
   z-index: -1;
-  width: 16%;
+  width: 12%;
 }
-
-.projectsSection {
-  background-image: url(../../assets/img/blobBgProjects.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  min-height: 1000px;
-  position: relative;
-  z-index: 0;
+.aboutMeSection .wavesTop {
+  margin-top: 5rem;
 }
-.projectsSection h1 {
-  padding-top: 5rem;
-  font-size: 5rem;
-  line-height: 5rem;
-  font-family: Mont;
-  margin: 0;
-}
-.projectsSection h2 {
-  font-family: Pacifico;
-  font-size: 4rem;
-  line-height: 3rem;
+.aboutMeSection .scrollIndicatorLink .scrollIndicator {
+  width: 3%;
   position: absolute;
-  left: 52%;
-  top: 6.5%;
-  transform: rotate(-12deg);
+  left: 48%;
+  bottom: 20vh;
+  z-index: 100;
+  transition: bottom 0.3s ease-in-out;
 }
-.projectsSection .projectsSectionDesc {
-  font-weight: 500;
-  font-family: "Open Sans";
-  font-size: 1.5rem;
-  width: 75%;
-  margin: 5rem auto 7rem auto;
-}
-.projectsSection .projects .row {
-  text-align: left;
-  margin-bottom: 5rem;
-}
-.projectsSection .projects .row .projectsImg {
-  display: flex;
-  justify-content: flex-end;
-}
-.projectsSection .projects .row .projectsImg img {
-  border-radius: 30px;
-}
-.projectsSection .projects .row h3 {
-  font-size: 2rem;
-  font-family: Mont;
-  margin-bottom: 1.2rem;
-}
-.projectsSection .projects .row p {
-  font-family: Inter;
-  font-weight: 200;
-  font-size: 1.2rem;
-}
-.projectsSection .projects .row .project2text h3 {
-  padding-top: 3rem;
-}
-.projectsSection .projectsOutro h4 {
-  font-size: 2rem;
-  font-family: Mont;
-  margin-bottom: 1.2rem;
-}
-.projectsSection .projectsOutro p {
-  font-size: 1.7rem;
-  font-family: Inter;
-  font-weight: 100;
-}
-.projectsSection .projectsOutro .waveTransitionTop {
-  width: 100vw;
-}
-.projectsSection .textDecorationProjects {
-  background-image: linear-gradient(90deg, #ff683a, #610068);
-  background-size: 0% 5px;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-position-y: 35px;
-  transition: background-size 0.6s ease-in-out;
-  text-decoration: none;
-  color: #fff;
-}
-.projectsSection .textDecorationProjects:hover {
-  background-size: 100% 5px;
+.aboutMeSection .scrollIndicatorLink .scrollIndicator:hover {
+  bottom: 18vh;
 }
 
 .howIWorkSection {
-  background: linear-gradient(180deg, #520ae4 0%, #8d37fe 100%);
   position: relative;
-}
-.howIWorkSection .city {
-  position: absolute;
-  opacity: 0.1;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, #6e0568 0%, #5107e6 100%);
 }
 .howIWorkSection h1 {
   font-family: Mont;
@@ -324,55 +763,92 @@ body {
   font-size: 4.5rem;
   color: #fff;
   text-align: center;
+  margin-bottom: 5rem;
 }
 .howIWorkSection h1 span {
   background-image: linear-gradient(90deg, #ef7800, #fef506);
   background-size: 100% 18px;
   background-position: left bottom;
   background-repeat: no-repeat;
-  background-position-y: 68px;
 }
-.howIWorkSection .headingHowIWork {
-  margin-top: 8.5rem;
+.howIWorkSection .container-fluid {
+  margin: 0 5rem;
 }
-.howIWorkSection .headingHowIWork span {
-  font-size: 3rem;
+.howIWorkSection .textHowIWork {
+  margin-top: 4rem;
+  padding-left: 4rem;
+  text-align: center;
+}
+.howIWorkSection .textHowIWork h2 {
+  font-size: 3.5rem;
+  padding-top: 2rem;
   font-family: Inter;
   font-weight: 700;
   color: #fff;
-  line-height: 45px;
-  vertical-align: middle;
-  position: relative;
-  z-index: 10;
 }
-.howIWorkSection .headingHowIWork img {
-  width: 7%;
-}
-.howIWorkSection p {
-  font-size: 1.5rem;
+.howIWorkSection .textHowIWork p {
+  font-size: 1.6rem;
   color: #fff;
   font-family: Roboto;
-  font-weight: 300;
-  padding-left: 5.8rem;
+  font-weight: 100;
   line-height: 25px;
   letter-spacing: 1px;
   margin-bottom: 0;
   position: relative;
   z-index: 10;
 }
+.howIWorkSection .imgHowIWork {
+  display: flex;
+  justify-content: center;
+}
+.howIWorkSection .imgHowIWork img {
+  width: 60%;
+}
 .howIWorkSection .bold {
   font-weight: 700;
 }
-.howIWorkSection .container-fluid {
-  position: relative;
-  z-index: 10;
-  padding-top: 5rem;
-  width: 80%;
+.howIWorkSection .workProcess {
+  padding: 4rem 0;
+}
+.howIWorkSection .workProcess .step {
+  text-align: center;
+}
+.howIWorkSection .workProcess .step h3 {
+  font-size: 2.5rem;
+  font-family: Inter;
+  font-weight: 700;
+  color: #fff;
+}
+.howIWorkSection .workProcess .step h3 span {
+  background-image: linear-gradient(90deg, #ef7800, #fef506);
+  background-size: 100% 3px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.howIWorkSection .workProcess .step p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Open Sans";
+}
+.howIWorkSection .workProcess .step .stat {
+  font-size: 1rem;
+  color: #00fff0;
+}
+.howIWorkSection .scrollIndicatorLink .scrollIndicator {
+  width: 3%;
+  position: absolute;
+  left: 48%;
+  bottom: 0vh;
+  z-index: 100;
+  transition: bottom 0.3s ease-in-out;
+}
+.howIWorkSection .scrollIndicatorLink .scrollIndicator:hover {
+  bottom: -2vh;
 }
 
 .cta {
   text-align: center;
-  background-image: url(../../assets/img/ctaBg-min.jpg);
+  background-image: url(../../img/backgrounds/ctaBg-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -538,247 +1014,15 @@ body {
   color: #fafafa;
 }
 
-.sertifikatiSection {
-  position: relative;
-}
-.sertifikatiSection h1 {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  font-family: Mont;
-  font-size: 4rem;
-  color: #fff;
-  padding-top: 3rem;
-}
-.sertifikatiSection p {
-  font-weight: 500;
-  font-family: "Open Sans";
-  font-size: 1.5rem;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  top: 120px;
-}
-.sertifikatiSection .background {
-  width: 100vw;
-  min-height: 750px;
-  background: #3e1e68;
-}
-.sertifikatiSection .swiper {
-  max-width: 600px;
-  height: 500px;
-}
-.sertifikatiSection .swiperContainer {
-  margin-top: 14rem;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.sertifikatiSection .background span {
-  width: 15vmin;
-  height: 15vmin;
-  border-radius: 15vmin;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  -webkit-animation-name: move;
-          animation-name: move;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.sertifikatiSection .background span:nth-child(1) {
-  color: #583c87;
-  top: 59%;
-  left: 77%;
-  -webkit-animation-duration: 11.3s;
-          animation-duration: 11.3s;
-  -webkit-animation-delay: -12.4s;
-          animation-delay: -12.4s;
-  transform-origin: -4vw -1vh;
-  box-shadow: 30vmin 0 8.813550843vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(2) {
-  color: #ffacac;
-  top: 67%;
-  left: 80%;
-  -webkit-animation-duration: 15.9s;
-          animation-duration: 15.9s;
-  -webkit-animation-delay: -12.5s;
-          animation-delay: -12.5s;
-  transform-origin: -15vw 8vh;
-  box-shadow: 30vmin 0 6.4104463054vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(3) {
-  color: #e45a84;
-  top: 49%;
-  left: 35%;
-  -webkit-animation-duration: 14.5s;
-          animation-duration: 14.5s;
-  -webkit-animation-delay: -13.3s;
-          animation-delay: -13.3s;
-  transform-origin: -22vw -23vh;
-  box-shadow: 30vmin 0 4.4153846386vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(4) {
-  color: #ffacac;
-  top: 6%;
-  left: 39%;
-  -webkit-animation-duration: 13.6s;
-          animation-duration: 13.6s;
-  -webkit-animation-delay: -7.5s;
-          animation-delay: -7.5s;
-  transform-origin: -8vw -20vh;
-  box-shadow: 30vmin 0 10.6766319394vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(5) {
-  color: #e45a84;
-  top: 41%;
-  left: 64%;
-  -webkit-animation-duration: 12.1s;
-          animation-duration: 12.1s;
-  -webkit-animation-delay: -3.6s;
-          animation-delay: -3.6s;
-  transform-origin: 10vw -12vh;
-  box-shadow: 30vmin 0 6.3621826561vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(6) {
-  color: #e45a84;
-  top: 10%;
-  left: 19%;
-  -webkit-animation-duration: 15.5s;
-          animation-duration: 15.5s;
-  -webkit-animation-delay: -9s;
-          animation-delay: -9s;
-  transform-origin: -8vw -19vh;
-  box-shadow: -30vmin 0 4.0023969976vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(7) {
-  color: #e45a84;
-  top: 31%;
-  left: 63%;
-  -webkit-animation-duration: 14.3s;
-          animation-duration: 14.3s;
-  -webkit-animation-delay: -6.9s;
-          animation-delay: -6.9s;
-  transform-origin: -15vw -17vh;
-  box-shadow: 30vmin 0 7.461064522vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(8) {
-  color: #e45a84;
-  top: 24%;
-  left: 49%;
-  -webkit-animation-duration: 12.5s;
-          animation-duration: 12.5s;
-  -webkit-animation-delay: -8.4s;
-          animation-delay: -8.4s;
-  transform-origin: 25vw 6vh;
-  box-shadow: 30vmin 0 3.892504325vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(9) {
-  color: #ffacac;
-  top: 88%;
-  left: 40%;
-  -webkit-animation-duration: 11.5s;
-          animation-duration: 11.5s;
-  -webkit-animation-delay: -1.1s;
-          animation-delay: -1.1s;
-  transform-origin: -13vw -2vh;
-  box-shadow: 30vmin 0 10.5819204346vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(10) {
-  color: #ffacac;
-  top: 23%;
-  left: 74%;
-  -webkit-animation-duration: 15.8s;
-          animation-duration: 15.8s;
-  -webkit-animation-delay: -15.7s;
-          animation-delay: -15.7s;
-  transform-origin: -5vw 16vh;
-  box-shadow: 30vmin 0 8.2863406911vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(11) {
-  color: #583c87;
-  top: 41%;
-  left: 98%;
-  -webkit-animation-duration: 15.1s;
-          animation-duration: 15.1s;
-  -webkit-animation-delay: -4.4s;
-          animation-delay: -4.4s;
-  transform-origin: 9vw -7vh;
-  box-shadow: -30vmin 0 4.6635228009vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(12) {
-  color: #583c87;
-  top: 43%;
-  left: 22%;
-  -webkit-animation-duration: 10.6s;
-          animation-duration: 10.6s;
-  -webkit-animation-delay: -9.7s;
-          animation-delay: -9.7s;
-  transform-origin: -8vw -14vh;
-  box-shadow: -30vmin 0 10.8864557009vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(13) {
-  color: #e45a84;
-  top: 94%;
-  left: 23%;
-  -webkit-animation-duration: 13.4s;
-          animation-duration: 13.4s;
-  -webkit-animation-delay: -2.2s;
-          animation-delay: -2.2s;
-  transform-origin: 2vw -13vh;
-  box-shadow: -30vmin 0 10.1865813551vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(14) {
-  color: #583c87;
-  top: 10%;
-  left: 35%;
-  -webkit-animation-duration: 15.7s;
-          animation-duration: 15.7s;
-  -webkit-animation-delay: -14.9s;
-          animation-delay: -14.9s;
-  transform-origin: -20vw -10vh;
-  box-shadow: 30vmin 0 6.4620557849vmin currentColor;
-}
-.sertifikatiSection .background span:nth-child(15) {
-  color: #ffacac;
-  top: 42%;
-  left: 9%;
-  -webkit-animation-duration: 10.2s;
-          animation-duration: 10.2s;
-  -webkit-animation-delay: -13.6s;
-          animation-delay: -13.6s;
-  transform-origin: -24vw -23vh;
-  box-shadow: -30vmin 0 6.4615777445vmin currentColor;
-}
-@-webkit-keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
-
 @font-face {
   font-family: TropicalAsian;
-  src: url(../fonts/TropicalAsian.ttf);
+  src: url(../../fonts/TropicalAsian.ttf);
 }
 @font-face {
   font-family: Mont;
-  src: url(../fonts/Mont.otf);
+  src: url(../../fonts/Mont.otf);
 }
 @font-face {
   font-family: Pacifico;
-  src: url(../fonts/Pacifico.ttf);
+  src: url(../../fonts/Pacifico.ttf);
 }/*# sourceMappingURL=style.css.map */

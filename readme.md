@@ -1,19 +1,23 @@
 # Karierno Portfolio
 ## Izrabotka na Mihail Kuzmanoski - SOSU Ilinden, pod mentorstvo na Hristina Stojanovska.
-### Koristeni tehnologii
+### Koristeni tehnologii i softver
 - **Adobe Photoshop 2021**
 - **Adobe Lightroom Classic 2022**
 - **Adobe XD**
 - **Haikei**
 - **HTML5**
-- **CSS3, SCSS**
+- **CSS3**
+- **SCSS**
 - **Bootstrap 5**
 - **Google Fonts**
 - **Flaticon**
 - **JavaScript**
 - **SwiperJS**
+- **KUTE.js**
+- **Font Awesome**
 ### Namena
-Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM.
+Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od MASSUM. Ova e portfolio koe najdobro me opishuva mene i
+mojot nachin na rabota i dizajn.
 ### Tek na nastani
 - *02.03* Proektot e zapochnat na 02.03.2022 godina. Na prviot den e zapochnata izrabotkata na skicata na web-stranata. Zavrshena e samo prvata sekcija.
 
@@ -52,3 +56,9 @@ Proektot e namenet za natprevarot za najdobro karierno portfolio organiziran od 
 - *30.03* Napravena sekcija za sertifikatite.
 
 - *01.04* Animirani meurchinjata vo sekcijata za mene.
+
+- *03.04* Izvrshen celosen redesign na pochetnata strana, hero sekcijata
+promeneta celosno, proekti sekcijata skratena, sertifikatite minimalno
+promeneti, za mene sekcijata celosno smeneta, polovichno smeneta sekcijata
+za nachinot na koj rabotam i minimalno smeneta CTA sekcijata. Dodadena nova
+strana kade se prikacheni site proekti i e skoro gotova.
