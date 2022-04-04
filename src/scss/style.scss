@@ -6,14 +6,23 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
+  .goog-te-menu-frame {
+    box-shadow: none;
+  }
+}
+::-webkit-scrollbar-thumb{
+  background-color: #d403df;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 0, .6);
 }
 * {
   outline: 0;
 }
-::-webkit-scrollbar {
-  display: none;
-}
-.backToTop {
+.backToTop{
   opacity: 0;
   img {
     width: 50px;
@@ -21,7 +30,7 @@ body {
     z-index: 1000000;
     bottom: 3vh;
     right: 2vw;
-    background-color: #560eb6;
+    background-color: #ba1cc2;
     padding: 1rem;
     border-radius: 1000px;
     cursor: pointer;
@@ -54,7 +63,7 @@ body {
     }
     .heroButtons {
       padding-bottom: 1rem;
-      a{
+      a {
         @include button(#96009e);
         margin: 0 1rem;
         font-family: consolas;
@@ -93,14 +102,6 @@ body {
       padding: 0%;
       margin: 0.5rem !important;
     }
-    img {
-      filter: grayscale(0.8);
-      transition: filter 0.4s ease-in-out;
-      &:hover {
-        filter: grayscale(0);
-        transition: filter 0.4s ease-in-out;
-      }
-    }
     .dialogButton {
       display: flex;
       justify-content: center;
@@ -138,6 +139,19 @@ body {
       }
     }
   }
+  #google_translate_element {
+    display: inline;
+    .goog-te-gadget-simple {
+      background-color: transparent;
+      border: 0;
+    }
+    .goog-te-menu-value {
+      display: none;
+    }
+    img {
+      display: none;
+    }
+  }
 }
 .projectsSection {
   background-image: url(../../img/backgrounds/blobBgProjects.svg);
@@ -150,7 +164,7 @@ body {
   .projectsText {
     padding-top: 10rem;
     padding-left: 6rem;
-    a{
+    a {
       @include button(#f55d05);
       font-size: 2rem;
       font-family: Roboto;
@@ -213,7 +227,7 @@ body {
         background-repeat: no-repeat;
         background-position: left bottom;
         background-position-y: 35px;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
         &:hover {
           background-size: 100% 5px;
         }
@@ -367,7 +381,7 @@ body {
     color: #fff;
     margin-bottom: 2rem;
     display: inline-block;
-    background-image: linear-gradient(#af15cb, #d403df);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0),#d403df);
     background-size: 100% 12px;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -395,7 +409,7 @@ body {
       font-weight: 900;
       color: #d403df;
       text-shadow: 0px 6px 0px #96009e, 0px 12px 0px #5e0063;
-      line-height: 1rem;
+      line-height: 3rem;
       position: relative;
       z-index: -10;
     }
@@ -478,8 +492,8 @@ body {
     text-align: center;
     margin-bottom: 5rem;
     span {
-      background-image: linear-gradient(90deg, #ef7800, #fef506);
-      background-size: 100% 18px;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fa7268);
+      background-size: 100% 20px;
       background-position: left bottom;
       background-repeat: no-repeat;
     }
@@ -640,15 +654,10 @@ body {
       padding-top: 30px;
     }
     margin-bottom: 50px;
-    p {
-      text-align: right;
-      font-family: Roboto;
-      font-size: 1.5rem;
-      font-weight: 100;
-    }
     ul {
-      text-align: left;
+      text-align: center;
       list-style-type: none;
+      padding-left: 0;
       li {
         margin: 0.15rem 1rem;
         display: inline;
@@ -664,39 +673,6 @@ body {
     }
   }
   footer {
-    .footerNav {
-      background-color: #fff;
-      border-radius: 1000px;
-      margin-top: 0.75rem;
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        li {
-          display: inline;
-          padding: 1rem 2rem;
-          border-radius: 50px;
-          transition: background-color 0.5s ease-in-out;
-          &:hover {
-            transition: background-color 0.5s ease-in-out;
-            background-color: #000;
-            a {
-              transition: color 0.5s ease-in-out;
-              color: #fff;
-            }
-          }
-          a {
-            color: #000;
-            text-decoration: none;
-            font-family: Roboto;
-            font-weight: 300;
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
     .copyright p {
       font-family: Roboto;
       font-weight: 100;

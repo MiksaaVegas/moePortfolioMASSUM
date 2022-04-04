@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: linear-gradient(45deg, rgb(255, 255, 255) 30%, rgb(219, 219, 219) 50%, rgb(255, 255, 255) 70%);
+}
+
+* {
+  outline: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ed9726;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.backToTop {
+  opacity: 0;
+}
+.backToTop img {
+  width: 50px;
+  position: fixed;
+  z-index: 1000000;
+  bottom: 3vh;
+  right: 2vw;
+  background-color: #ba1cc2;
+  padding: 1rem;
+  border-radius: 1000px;
+  cursor: pointer;
+}/*# sourceMappingURL=nastani.css.map */

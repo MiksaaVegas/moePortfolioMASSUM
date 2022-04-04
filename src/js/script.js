@@ -1,9 +1,6 @@
 const inputName = document.querySelector(".inputName")
 const email = document.querySelector(".inputEmail")
 const message = document.querySelector(".inputMessage")
-const modal = document.querySelector("dialog")
-const openModalBtn = document.querySelector(".globe")
-const closeModalBtn = document.querySelector(".dialogButton")
 const backToTopBtn = document.querySelector(".backToTop")
 function sendMsg() {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
@@ -71,29 +68,8 @@ const tween4 = KUTE.fromTo(
 )
 tween3.start()
 tween4.start()
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'instant'
-  })
-}
-function disableScrolling() {
-  window.addEventListener('scroll', scrollToTop, true)
-}
-function enableScrolling() {
-  window.removeEventListener('scroll', scrollToTop, true)
-}
-openModalBtn.addEventListener('click', function () {
-  modal.showModal()
-  disableScrolling()
-})
-closeModalBtn.addEventListener('click', function () {
-  modal.close()
-  enableScrolling()
-})
 document.addEventListener('scroll', function () {
-  if(window.pageYOffset >= 1500){
+  if(window.pageYOffset >= 1000){
     backToTopBtn.style.opacity = 1
   }
   else{

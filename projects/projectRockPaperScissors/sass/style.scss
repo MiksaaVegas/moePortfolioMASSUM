@@ -1,0 +1,190 @@
+* {
+  user-select: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #222a45;
+}
+.headingHome {
+  text-align: center;
+  color: #fcfcfc;
+  margin-top: 6rem;
+  h1 {
+    font-size: 3.2rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .headingName {
+    font-size: 4.2rem;
+    font-family: "Lato", sans-serif;
+  }
+}
+.startGameRow {
+  text-align: center;
+  img {
+    width: 50%;
+    padding-top: 4rem;
+    cursor: pointer;
+    animation: scaleDown 0.4s linear;
+    &:hover {
+      animation: scale 0.4s linear;
+      animation-fill-mode: forwards;
+    }
+    &:hover ~ .roleHeading {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.97);
+    }
+  }
+  #scissorsImg {
+    margin-left: -2rem;
+  }
+  .roleHeading {
+    padding-top: 2rem;
+    text-align: center;
+    color: #fcfcfc;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.3rem;
+    transition: text-shadow 0.4s ease-in-out;
+  }
+  p {
+    color: #fcfcfc;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0%;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  .roleDescFirstLine {
+    padding-top: 0.3rem;
+  }
+}
+.gameInProgress {
+  .playerRoleCol {
+    img {
+      display: none;
+      margin-right: -50rem;
+    }
+  }
+  .rockLeft,
+  .paperLeft,
+  .scissorsLeft {
+    transform: rotate(90deg);
+    width: 80%;
+    padding-top: 8rem;
+  }
+  .rockRight,
+  .paperRight,
+  .scissorsRight {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transform: rotate(-90deg);
+    width: 80%;
+    padding-top: 8rem;
+    margin-left: 5rem;
+    display: none;
+  }
+}
+.shake {
+  animation: shake 2s ease-in-out 100ms 1 normal forwards;
+}
+.resultRow {
+  .resultWin,
+  .resultLose,
+  .resultDraw {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin: 0%;
+    font-size: 5rem;
+    opacity: 0.85;
+    display: none;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+  }
+  .resultDraw {
+    color: #ffd724;
+    text-shadow: 0px 0px 20px #ffd724;
+  }
+  .resultLose {
+    color: #bf0003;
+    text-shadow: 0px 0px 20px #bf0003;
+  }
+  .resultWin {
+    color: #00db0b;
+    text-shadow: 0px 0px 20px #00db0b;
+  }
+}
+footer {
+  color: #fcfcfc;
+  text-align: center;
+  margin-top: 8rem;
+  p {
+    margin: 0%;
+  }
+  .iconsCredits {
+    font-size: 0.7rem;
+    a {
+      color: #bfbfbf;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-track {
+  display: none;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes scaleDown {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
+}
+@media (max-width: 450px) {
+  .playerRoleCol,
+  .opponentRoleCol {
+    img {
+      transform: scale(0.9);
+      margin-bottom: 5rem;
+      margin-right: 0rem !important;
+    }
+  }
+}

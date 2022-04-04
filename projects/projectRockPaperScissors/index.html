@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="sass/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,100&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="headingHome">
+        <h1 class="animate__animated animate__backInDown">Let's Play</h1>
+        <h1 class="animate__animated animate__bounceInUp headingName">Rock Paper Scissors</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid startGameRow animate__animated animate__fadeIn">
+    <div class="row">
+      <div class="roleContainer col-md-4">
+        <img src="img/rock.svg" alt="" class="roleImg img-fluid animate__animated animate__zoomIn"
+          onclick="userSelected('Rock', 1);">
+        <br>
+        <h2 class="roleHeading">Rock</h2>
+        <p class="roleDescFirstLine">Beats scissors</p>
+        <p class="roleDescLastLine">Losses to paper</p>
+      </div>
+      <div class="roleContainer col-md-4">
+        <img src="img/paper.svg" alt="" class="roleImg img-fluid animate__animated animate__zoomIn"
+          onclick="userSelected('Paper', 2);">
+        <br>
+        <h2 class="roleHeading">Paper</h2>
+        <p class="roleDescFirstLine">Beats rock</p>
+        <p class="roleDescLastLine">Losses to scissors</p>
+      </div>
+      <div class="roleContainer col-md-4">
+        <img src="img/scissors.svg" id="scissorsImg" alt="" class="roleImg img-fluid  animate__animated animate__zoomIn"
+          onclick="userSelected('Scissors', 3);">
+        <br>
+        <h2 class="roleHeading">Scissors</h2>
+        <p class="roleDescFirstLine">Beats paper</p>
+        <p class="roleDescLastLine">Losses to rock</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row resultRow">
+      <h1 class="resultWin">You Win!</h1>
+      <h1 class="resultLose">You Lose!</h1>
+      <h1 class="resultDraw">It's a draw!</h1>
+    </div>
+  </div>
+  <div class="gameInProgress container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4 playerRoleCol">
+        <img src="img/rock.svg" class="rockLeft" alt="">
+        <img src="img/paper.svg" class="paperLeft" alt="">
+        <img src="img/scissors.svg" class="scissorsLeft" alt="">
+      </div>
+      <div class="col-md-4 opponentRoleCol">
+        <img src="img/rock.svg" class="rockRight" alt="">
+        <img src="img/paper.svg" class="paperRight" alt="">
+        <img src="img/scissors.svg" class="scissorsRight" alt="">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="copyright animate__animated animate__slideInUp">
+      <p>Designed and brought to you by Mihail Kuzmanoski</p>
+      <p>&copy;All rights reserved</p>
+    </div>
+    <div class="iconsCredits animate__animated animate__slideInUp">Icons made by <a
+        href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a
+        href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/anims.js"></script>
+</body>
+
+</html>
