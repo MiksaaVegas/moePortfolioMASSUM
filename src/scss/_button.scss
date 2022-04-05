@@ -1,6 +1,6 @@
 @mixin button($color) {
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 2rem;
   display: inline-block;
   transition: 0.3s;
   border-radius: 2px;
@@ -38,13 +38,13 @@
     top: 0;
     left: -100%;
     width: 100%;
-    height: 3px;
+    height: 8px;
     background: linear-gradient(90deg, transparent, $color);
   }
   span:nth-child(2) {
     top: -100%;
     right: 0;
-    width: 3px;
+    width: 8px;
     height: 100%;
     background: linear-gradient(180deg, transparent, $color);
   }
@@ -52,13 +52,13 @@
     bottom: 0;
     right: -100%;
     width: 100%;
-    height: 3px;
+    height: 8px;
     background: linear-gradient(270deg, transparent, $color);
   }
   span:nth-child(4) {
     bottom: -100%;
     left: 0;
-    width: 3px;
+    width: 8px;
     height: 100%;
     background: linear-gradient(360deg, transparent, $color);
   }

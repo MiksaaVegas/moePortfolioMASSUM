@@ -1,0 +1,142 @@
+@import "../../button";
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  user-select: none;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgb(219, 219, 219) 50%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
+* {
+  outline: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00f9ff;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.backToTop {
+  opacity: 0;
+  img {
+    width: 50px;
+    position: fixed;
+    z-index: 1000000;
+    bottom: 3vh;
+    right: 2vw;
+    background-color: #00f9ff;
+    padding: 1rem;
+    border-radius: 1000px;
+    cursor: pointer;
+  }
+}
+.nastaniHero {
+  background-image: url(../../../../img/projects/nastani/gradimeMostovi/gradimeMostoviHero.jpg);
+  .nastaniHeroCol {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+    text-align: center;
+    h1 {
+      font-family: Mont;
+      font-size: 5rem !important;
+      color: #e6e6e6;
+      span {
+        background-image: linear-gradient(90deg, #00f9ff, #095ab0);
+        background-size: 0% 5px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-position-y: 48px;
+        // transition: .75s ease-in-out;
+        // &:hover{
+        //   background-size: 100% 5px;
+        // }
+      }
+    }
+  }
+  .scrollIndicatorLink {
+    border: 0;
+    background-color: transparent;
+    img {
+      width: 3%;
+      position: absolute;
+      bottom: 5vh;
+      left: 48%;
+      right: auto;
+      transition: bottom 0.3s ease-in-out;
+      &:hover {
+        bottom: 3vh;
+      }
+    }
+  }
+}
+.zaNastanot {
+  padding-top: 5rem;
+  .zaNastanotCol {
+    text-align: center;
+    h2 {
+      font-family: Mont;
+      font-size: 4rem;
+      padding-bottom: 1rem;
+      span {
+        background-image: linear-gradient(90deg, #00f9ff, #095ab0);
+        background-size: 100% 10px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-position-y: 62px;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      font-family: Inter;
+      font-weight: 600;
+    }
+  }
+  .nastaniPara2 {
+    margin-top: 7rem;
+    padding: 0 10rem;
+    .zaNastanotCol {
+      text-align: left;
+      h3 {
+        font-family: Mont;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        span {
+          background-image: linear-gradient(90deg, #00f9ff, #095ab0);
+          background-size: 100% 6px;
+          background-repeat: no-repeat;
+          background-position: left bottom;
+          background-position-y: 50px;
+        }
+      }
+    }
+    .nastaniTextRight {
+      text-align: right;
+    }
+  }
+}
+@font-face {
+  font-family: Mont;
+  src: url(../../../../fonts/Mont.otf);
+}
+.zaNastanotColImg{
+  display: flex;
+  justify-content: center;
+  .resizedImg{
+    width: 40%;
+    display: inline-block;
+  }
+  .resizedImg2{
+    width: 70%;
+    display: inline-block;
+  }
+}

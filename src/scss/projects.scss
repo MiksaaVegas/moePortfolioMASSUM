@@ -134,4 +134,19 @@ body {
       }
     }
   }
+  .tipSlikaDiv{
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      li{
+        display: inline;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+    }
+  }
 }

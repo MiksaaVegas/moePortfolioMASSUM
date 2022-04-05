@@ -2,6 +2,7 @@ const inputName = document.querySelector(".inputName")
 const email = document.querySelector(".inputEmail")
 const message = document.querySelector(".inputMessage")
 const backToTopBtn = document.querySelector(".backToTop")
+//* CTA SEKCIJATA
 function sendMsg() {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
     if (inputName.value.length > 2) {
@@ -30,6 +31,7 @@ function sendMsg() {
     email.style.border = "5px solid #ff0000"
   }
 }
+//* SWIPERITE
 const swiper = new Swiper(".swiperSertifikati", {
   effect: "cards",
   grabCursor: true,
@@ -54,6 +56,7 @@ const swiper2 = new Swiper(".mySwiper", {
     enabled: true,
   },
 })
+//*ANIMIRANI BLOBOVI
 const tween3 = KUTE.fromTo(
   "#path5",
   { path: "#path5" },
@@ -68,6 +71,7 @@ const tween4 = KUTE.fromTo(
 )
 tween3.start()
 tween4.start()
+//*KOPCHE ZA GORE
 document.addEventListener('scroll', function () {
   if(window.pageYOffset >= 1000){
     backToTopBtn.style.opacity = 1

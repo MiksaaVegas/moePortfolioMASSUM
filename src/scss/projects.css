@@ -129,7 +129,7 @@ body {
 }
 .projects .cardRow .cardCol .card .card-body .videoButton {
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 2rem;
   display: inline-block;
   transition: 0.3s;
   border-radius: 2px;
@@ -168,13 +168,13 @@ body {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(90deg, transparent, #e60703);
 }
 .projects .cardRow .cardCol .card .card-body .videoButton span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 3px;
+  width: 8px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #e60703);
 }
@@ -182,19 +182,19 @@ body {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(270deg, transparent, #e60703);
 }
 .projects .cardRow .cardCol .card .card-body .videoButton span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 3px;
+  width: 8px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #e60703);
 }
 .projects .cardRow .cardCol .card .card-body .webButton {
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 2rem;
   display: inline-block;
   transition: 0.3s;
   border-radius: 2px;
@@ -233,13 +233,13 @@ body {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(90deg, transparent, #161efc);
 }
 .projects .cardRow .cardCol .card .card-body .webButton span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 3px;
+  width: 8px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #161efc);
 }
@@ -247,19 +247,19 @@ body {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(270deg, transparent, #161efc);
 }
 .projects .cardRow .cardCol .card .card-body .webButton span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 3px;
+  width: 8px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #161efc);
 }
 .projects .cardRow .cardCol .card .card-body .eventButton {
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 2rem;
   display: inline-block;
   transition: 0.3s;
   border-radius: 2px;
@@ -298,13 +298,13 @@ body {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(90deg, transparent, #22bdff);
 }
 .projects .cardRow .cardCol .card .card-body .eventButton span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 3px;
+  width: 8px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #22bdff);
 }
@@ -312,16 +312,31 @@ body {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(270deg, transparent, #22bdff);
 }
 .projects .cardRow .cardCol .card .card-body .eventButton span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 3px;
+  width: 8px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #22bdff);
 }
 .projects .cardRow .cardCol .card img {
   transition: 0.3s ease-in-out;
+}
+.projects .tipSlikaDiv {
+  width: 25%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.projects .tipSlikaDiv ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .tipSlikaDiv ul li {
+  display: inline;
+  font-size: 1.3rem;
+  cursor: pointer;
 }/*# sourceMappingURL=projects.css.map */

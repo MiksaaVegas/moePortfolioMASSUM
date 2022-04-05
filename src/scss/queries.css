@@ -1,0 +1,137 @@
+@media (max-width: 3350px) {
+  .heroText h1 {
+    font-size: 4rem !important;
+  }
+  .heroText h2 {
+    font-size: 3.2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .heroText a {
+    font-size: 2.5rem !important;
+    margin: 0 1rem !important;
+    padding: 1.25rem 1.2rem !important;
+  }
+
+  .heroButtons a:nth-child(1) {
+    margin-left: -2rem !important;
+  }
+}
+@media (max-width: 2350px) {
+  .heroText h1 {
+    font-size: 2.9rem !important;
+  }
+  .heroText h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 1.1rem !important;
+  }
+  .heroText a {
+    font-size: 1.75rem !important;
+    margin: 0 !important;
+    padding: 0.7rem 1.5rem !important;
+  }
+  .heroText a span:nth-child(1),
+.heroText a span:nth-child(3) {
+    height: 6px !important;
+  }
+  .heroText a span:nth-child(2),
+.heroText a span:nth-child(4) {
+    width: 6px !important;
+  }
+}
+@media (max-width: 2200px) {
+  .globe {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (max-width: 2050px) {
+  .heroText {
+    padding: 0 2rem !important;
+  }
+  .heroText h1 {
+    font-size: 2.9rem !important;
+  }
+  .heroText h2 {
+    font-size: 2.5rem !important;
+  }
+  .heroText a {
+    font-size: 1.75rem !important;
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+  }
+  .heroText a span:nth-child(1),
+.heroText a span:nth-child(3) {
+    height: 4px !important;
+  }
+  .heroText a span:nth-child(2),
+.heroText a span:nth-child(4) {
+    width: 4px !important;
+  }
+  .heroText .heroButtons a:nth-child(1) {
+    margin-left: -1rem !important;
+  }
+}
+@media (max-width: 1920px) {
+  .heroButtons a:nth-child(1) {
+    margin-left: -2rem !important;
+  }
+}
+@media (max-width: 1800px) {
+  .heroText h1 {
+    font-size: 2.2rem !important;
+    padding-top: 1.2rem !important;
+  }
+  .heroText h2 {
+    font-size: 1.8rem !important;
+    margin-top: 1rem !important;
+  }
+  .heroText a {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 1400px) {
+  .heroText {
+    padding: 0 1rem !important;
+  }
+  .heroText h1 {
+    font-size: 1.7rem !important;
+    padding-top: 1rem !important;
+  }
+  .heroText h2 {
+    font-size: 1.4rem !important;
+    margin-top: 0.65rem !important;
+  }
+  .heroText a {
+    letter-spacing: 1px !important;
+    font-size: 1rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+  .heroText .heroButtons a:nth-child(1) {
+    margin-left: -0.5rem !important;
+  }
+}
+@media (max-width: 1150px) {
+  .globe {
+    width: 32px;
+    height: 32px;
+  }
+
+  .heroText h1 {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .heroText {
+    margin-left: 0 !important;
+    width: 80%;
+    margin: 0 10% !important;
+    margin-top: 10vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroSection .scrollIndicator {
+    width: 5% !important;
+  }
+}/*# sourceMappingURL=queries.css.map */
