@@ -19,6 +19,129 @@
     }
   }
 }
+@media (max-width: 3150px) {
+  .projectsSection {
+    .container-fluid {
+      padding-bottom: 10rem !important;
+      .projectsText {
+        padding-right: 7rem !important;
+        h1 {
+          font-size: 8rem !important;
+        }
+        h2 {
+          font-size: 6rem !important;
+        }
+        p {
+          font-size: 2.5rem !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 2800px) {
+  .projectsSection {
+    .projectsText {
+      padding-right: 2rem !important;
+      a {
+        font-size: 2.2rem !important;
+      }
+      h1 {
+        padding-top: 3rem !important;
+      }
+    }
+    .projectDesc p {
+      font-size: 2.5rem !important;
+    }
+  }
+  .sertifikatiSection {
+    .swiperContainer {
+      .swiper {
+        max-width: 55vw !important;
+      }
+    }
+  }
+  .aboutMeSection {
+    .quoteContainer {
+      padding-top: 0 !important;
+      .quote {
+        font-size: 11rem !important;
+      }
+      .rapper {
+        font-size: 3rem !important;
+      }
+    }
+  }
+  .howIWorkSection{
+    h1{
+      font-size: 7rem !important;
+    }
+    h2{
+      font-size: 4.5rem !important;
+      padding-top: 1rem !important;
+    }
+    p{
+      font-size: 2.65rem !important;
+      line-height: 3.5rem !important;
+    }
+    .workProcess{
+      padding: 6rem 0;
+      h3{
+        font-size: 3rem !important;
+      }
+      p{
+        font-size: 1.75rem !important;
+      }
+    }
+    .imgHowIWork{
+      padding-top: 2.5rem !important;
+    }
+  }
+}
+@media (max-width: 2600px) {
+  .aboutMeSection {
+    .aboutMeText {
+      h1 {
+        font-size: 7rem !important;
+      }
+      p {
+        font-size: 2.2rem !important;
+      }
+      .customAboutMeText {
+        font-size: 8rem !important;
+      }
+    }
+  }
+  .howIWorkSection{
+    h1{
+      margin-bottom: 5.5rem !important;
+    }
+  }
+}
+@media (max-width: 2450px) {
+  .projectsSection {
+    .container-fluid {
+      padding-left: 10rem !important;
+      padding-right: 10rem !important;
+      .swiper {
+        height: 100%;
+      }
+    }
+  }
+  .sertifikatiSection {
+    h1 {
+      font-size: 8rem !important;
+    }
+    p {
+      font-size: 2.75rem !important;
+    }
+    .swiperContainer {
+      height: 80%;
+      .swiper {
+        max-width: 60vw !important;
+      }
+    }
+  }
+}
 @media (max-width: 2350px) {
   .heroText {
     h1 {
@@ -31,7 +154,7 @@
     a {
       font-size: 1.75rem !important;
       margin: 0 !important;
-      padding: .7rem 1.5rem !important;
+      padding: 0.7rem 1.5rem !important;
       span:nth-child(1),
       span:nth-child(3) {
         height: 6px !important;
@@ -47,6 +170,42 @@
   .globe {
     width: 64px;
     height: 64px;
+  }
+  .projectsSection {
+    .container-fluid {
+      padding: 5rem 7rem 11rem 7rem !important;
+      .projectsText {
+        h1 {
+          font-size: 6rem !important;
+        }
+        h2 {
+          font-size: 4.5rem !important;
+        }
+        p {
+          font-size: 1.8rem !important;
+        }
+        a {
+          font-size: 1.7rem !important;
+          padding: 0.65rem 1.1rem !important;
+          span:nth-child(1),
+          span:nth-child(3) {
+            height: 6px !important;
+          }
+          span:nth-child(2),
+          span:nth-child(4) {
+            width: 6px !important;
+          }
+        }
+      }
+      .projectDesc p {
+        font-size: 1.9rem !important;
+      }
+    }
+  }
+  .aboutMeSection{
+    .wavesTop{
+      height: 300px;
+    }
   }
 }
 @media (max-width: 2050px) {
@@ -77,11 +236,66 @@
       }
     }
   }
+  .aboutMeSection {
+    .aboutMeText {
+      padding-left: 8rem !important;
+      h1 {
+        font-size: 6rem !important;
+      }
+      p {
+        font-size: 1.8rem !important;
+      }
+      .customAboutMeText {
+        font-size: 6rem !important;
+      }
+    }
+    .quoteContainer {
+      .quote {
+        font-size: 8rem !important;
+      }
+      .rapper {
+        padding-top: 2rem !important;
+        font-size: 2rem !important;
+      }
+    }
+    .wavesTop {
+      margin-top: 0 !important;
+    }
+  }
+  .howIWorkSection{
+    .imgHowIWork{
+      img{
+        width: 60%;
+      }
+    }
+  }
 }
 @media (max-width: 1920px) {
   .heroButtons {
     a:nth-child(1) {
       margin-left: -2rem !important;
+    }
+  }
+  .howIWorkSection{
+    h1{
+      font-size: 5rem !important;
+    }
+    h2{
+      font-size: 3.3rem !important;
+    }
+    p{
+      font-size: 1.8rem !important;
+      line-height: 2.5rem !important;
+    }
+    .workProcess{
+      padding-bottom: 0 !important;
+      h3{
+        font-size: 2.5rem !important;
+      }
+      p{
+        font-size: 1.5rem !important;
+        padding: 0 2.5rem !important;
+      }
     }
   }
 }
@@ -100,18 +314,101 @@
     }
   }
 }
-@media (max-width: 1400px) {
-  .heroText{
-    padding: 0 1rem !important;
+@media (max-width: 1650px) {
+  .projectsSection {
+    .container-fluid {
+      padding: 3.5rem 4.5rem 7rem 4.5rem !important;
+      .projectsText {
+        padding-right: 4rem !important;
+        h1 {
+          font-size: 4rem !important;
+        }
+        h2 {
+          font-size: 3rem !important;
+          margin-top: -1.5rem !important;
+        }
+        p {
+          font-size: 1.3rem !important;
+          margin-bottom: 0 !important;
+        }
+        a {
+          margin-top: 0.8rem !important;
+          font-size: 1.4rem !important;
+          padding: 0.5rem 0.8rem !important;
+          span:nth-child(1),
+          span:nth-child(3) {
+            height: 3px !important;
+          }
+          span:nth-child(2),
+          span:nth-child(4) {
+            width: 3px !important;
+          }
+        }
+      }
+      .projectDesc p {
+        font-size: 1.4rem !important;
+      }
+    }
+  }
+  .sertifikatiSection {
+    h1 {
+      font-size: 6rem !important;
+    }
+    p {
+      font-size: 2rem !important;
+    }
+  }
+  .aboutMeSection {
+    .aboutMeText {
+      padding-left: 5rem !important;
+      padding-top: 3rem !important;
+      h1 {
+        font-size: 5rem !important;
+      }
+      p {
+        font-size: 1.5rem !important;
+      }
+      .customAboutMeText {
+        padding-top: 1rem !important;
+        font-size: 5rem !important;
+      }
+    }
+    .blob4, .blob5{
+      bottom: 30%;
+    }
+  }
+  .howIWorkSection{
     h1{
+      margin-bottom: 3rem !important;
+      font-size: 3.5rem !important;
+      span{
+        background-size: 100% 15px !important;
+      }
+    }
+    .textHowIWork{
+      margin-top: 0 !important;
+      h2{
+        font-size: 2.5rem !important;
+      }
+      p{
+        line-height: 1.75rem !important;
+        font-size: 1.45rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .heroText {
+    padding: 0 1rem !important;
+    h1 {
       font-size: 1.7rem !important;
       padding-top: 1rem !important;
     }
-    h2{
+    h2 {
       font-size: 1.4rem !important;
-      margin-top: .65rem !important;
+      margin-top: 0.65rem !important;
     }
-    a{
+    a {
       letter-spacing: 1px !important;
       font-size: 1rem !important;
       padding: 0.3rem 0.8rem !important;
@@ -122,31 +419,248 @@
       }
     }
   }
-}
-@media (max-width: 1150px){
-  .globe{
-    width: 32px;
-    height: 32px;
-  }
-  .heroText{
-    h1{
-      font-size: 1.5rem !important;
+  .aboutMeSection {
+    .quoteContainer {
+      .quote {
+        font-size: 5rem !important;
+      }
+      .rapper {
+        padding-top: 3rem !important;
+        font-size: 1.7rem !important;
+      }
+    }
+    .wavesTop{
+      height: 300px;
     }
   }
 }
-@media (max-width: 992px){
-  .heroText{
-    margin-left: 0 !important;
-    width: 80%;
-    margin: 0 10% !important;
-    margin-top: 10vh !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 1250px) {
+  .projectsSection {
+    .container-fluid {
+      .projectDesc p {
+        font-size: 1.1rem !important;
+      }
+    }
   }
-  .heroSection{
-    .scrollIndicator{
+  .sertifikatiSection {
+    .swiperContainer {
+      height: 75% !important;
+      top: 25vh !important;
+      .swiper {
+        width: 55vw !important;
+      }
+    }
+    .sertifikatiText {
+      h1 {
+        font-size: 3rem !important;
+      }
+      p {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .globe {
+    width: 32px;
+    height: 32px;
+  }
+  .heroText {
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
+  .projectsSection {
+    .container-fluid {
+      padding: 2rem 3.5rem 3.5rem 3.5rem !important;
+      .projectsText {
+        h1 {
+          padding-top: 1rem !important;
+          font-size: 3rem !important;
+        }
+        h2 {
+          font-size: 2rem !important;
+        }
+        p {
+          font-size: 1rem !important;
+          margin-top: 1rem !important;
+        }
+        a {
+          font-size: 1rem !important;
+          margin-top: 0.5rem !important;
+          padding: 0.4rem 0.7rem !important;
+        }
+      }
+    }
+  }
+  .aboutMeSection {
+    .aboutMeText {
+      h1 {
+        font-size: 4rem !important;
+        margin-bottom: 1rem !important;
+      }
+      p {
+        font-size: 1.3rem !important;
+      }
+      .customAboutMeText {
+        font-size: 4rem !important;
+      }
+    }
+    .blob4,
+    .blob5 {
+      bottom: 33% !important;
+    }
+    .wavesTop{
+      height: 130px !important;
+    }
+  }
+  .howIWorkSection{
+    .textHowIWork{
+      padding: 0 0rem !important;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .heroSection {
+    .heroText {
+      margin-left: 0 !important;
+      width: 80%;
+      margin: 0 10% !important;
+      margin-top: 10vh !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .scrollIndicator {
       width: 5% !important;
+    }
+  }
+  .projectsSection {
+    .container-fluid {
+      .projectsText {
+        text-align: center;
+        padding-right: 0 !important;
+        h1 {
+          padding-top: 0 !important;
+        }
+        p {
+          font-size: 0.9rem !important;
+          padding: 0 3rem !important;
+        }
+        a {
+          margin: 0.4rem 0 !important;
+        }
+      }
+      .projectsSwiper {
+        .swiper {
+          max-width: 85vw !important;
+        }
+      }
+    }
+  }
+  .sertifikatiSection {
+    .swiperContainer {
+      height: 80% !important;
+      top: 23vh !important;
+      .swiper {
+        width: 80vw !important;
+      }
+    }
+    .background {
+      height: 75vh;
+    }
+  }
+  .aboutMeSection {
+    .aboutMeText {
+      text-align: center !important;
+      margin-bottom: 10rem;
+    }
+    .quoteContainer {
+      .rapper {
+        font-size: 1.5rem !important;
+      }
+    }
+    .wavesTop{
+      height: 90px !important;
+    }
+  }
+  .howIWorkSection{
+    .imgHowIWork{
+      img{
+        width: 30%;
+        margin: 0 35%;
+      }
+    }
+  }
+
+}
+@media (max-width: 750px) {
+  .sertifikatiSection {
+    .background {
+      height: 60vh;
+    }
+  }
+  .aboutMeSection {
+    .blob4,
+    .blob5 {
+      display: none !important;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .projectsSection {
+    .container-fluid {
+      padding: 1rem 1.5rem !important;
+      .projectsText {
+        h1 {
+          line-height: 4.5rem;
+        }
+        p {
+          font-size: 0.75rem !important;
+        }
+        a {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
+  .aboutMeSection {
+    .quoteContainer {
+      .quote {
+        font-size: 4rem !important;
+      }
+      .rapper{
+        font-size: 1.2rem !important;
+      }
+    }
+    .aboutMeText{
+      padding: 2rem 1.5rem 0 1.5rem !important;
+      h1{
+        font-size: 3.5rem !important;
+      }
+      p{
+        font-size: 1rem !important;
+      }
+      .customAboutMeText{
+        font-size: 3.2rem !important;
+      }
+    }
+  }
+}
+//!QUERIES SO HEIGHT
+@media (max-height: 1400px) {
+  .sertifikatiSection {
+    .swiperContainer {
+      top: 25vh !important;
+      .swiper {
+        width: 50vw !important;
+      }
+    }
+    h1 {
+      font-size: 4.5rem !important;
+    }
+    p {
+      font-size: 2rem !important;
     }
   }
 }

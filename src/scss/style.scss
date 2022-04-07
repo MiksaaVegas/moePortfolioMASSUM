@@ -10,19 +10,19 @@ body {
     box-shadow: none;
   }
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #d403df;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
-::-webkit-scrollbar-track{
-  background-color: rgba(0, 0, 0, .6);
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 * {
   outline: 0;
 }
-.backToTop{
+.backToTop {
   opacity: 0;
   img {
     width: 50px;
@@ -162,39 +162,39 @@ body {
   color: #fff;
   z-index: 0;
   position: relative;
-  padding-bottom: 8rem;
+  .container-fluid {
+    padding: 10rem 15rem 15rem 15rem;
+  }
   .projectsText {
-    padding-top: 10rem;
-    padding-left: 6rem;
+    padding-right: 20rem;
     a {
       @include button(#f55d05);
-      font-size: 2rem;
+      font-size: 2.8rem;
       font-family: Roboto;
       font-weight: 700;
       color: #fff;
+      margin-top: 2rem;
     }
     h1 {
-      padding-top: 5rem;
-      font-size: 5rem;
+      padding-top: 6rem;
+      font-size: 10rem;
       line-height: 5rem;
       font-family: Mont;
       margin: 0;
     }
     h2 {
       font-family: Pacifico;
-      font-size: 3.5rem;
-      line-height: 3rem;
+      font-size: 7rem;
     }
     .projectsSectionDesc {
       font-weight: 300;
       font-family: "Open Sans";
-      font-size: 1.5rem;
+      font-size: 3rem;
       margin-top: 2rem;
     }
   }
   .projectsSwiper {
     padding: 0;
-    padding-right: 4rem;
     position: relative;
     .swiper-pagination-bullet {
       background-color: #fff;
@@ -203,8 +203,7 @@ body {
       background-color: #fff;
     }
     .swiper {
-      max-height: 600px;
-      margin-top: 10rem;
+      max-height: 97%;
     }
     .swiper-slide {
       text-align: center;
@@ -228,7 +227,6 @@ body {
         background-size: 0% 5px;
         background-repeat: no-repeat;
         background-position: left bottom;
-        background-position-y: 35px;
         transition: 0.3s ease-in-out;
         &:hover {
           background-size: 100% 5px;
@@ -237,11 +235,11 @@ body {
     }
     .swiper-slide img {
       display: block;
-      width: 100%;
-      height: 100%;
       position: relative;
+      height: 100%;
+      width: 100%;
       bottom: 0;
-      object-fit: cover;
+      object-fit: contain;
     }
     .projectDesc {
       opacity: 0;
@@ -257,7 +255,7 @@ body {
         opacity: 1;
       }
       p {
-        font-size: 2rem;
+        font-size: 3rem;
         color: #fff;
         font-weight: 300;
         font-family: "Open Sans";
@@ -271,11 +269,11 @@ body {
       width: 3%;
       position: absolute;
       left: 48%;
-      bottom: 5vh;
+      bottom: 3vh;
       z-index: 100;
       transition: bottom 0.3s ease-in-out;
       &:hover {
-        bottom: 3vh;
+        bottom: 2vh;
       }
     }
   }
@@ -283,40 +281,36 @@ body {
 .sertifikatiSection {
   position: relative;
   overflow: hidden;
-  h1 {
+  .sertifikatiText {
     position: absolute;
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-    font-family: Mont;
-    font-size: 4rem;
-    color: #fff;
-    padding-top: 3rem;
-  }
-  p {
-    font-weight: 300;
-    font-family: "Open Sans";
-    font-size: 1.5rem;
-    position: absolute;
-    z-index: 1;
+    z-index: 10000;
     width: 100%;
     text-align: center;
     color: #fff;
-    top: 120px;
+    h1 {
+      font-family: Mont;
+      font-size: 10rem;
+      padding-top: 2rem;
+    }
+    p {
+      font-weight: 300;
+      font-family: "Open Sans";
+      font-size: 3rem;
+    }
   }
   .background {
     width: 100vw;
-    min-height: 1000px;
+    height: 100vh;
     background: #1c013f;
   }
   .swiper {
     max-width: 40vw;
   }
   .swiperContainer {
-    height: 70%;
+    height: 75%;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    top: 25vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -354,11 +348,11 @@ body {
         width: 3%;
         position: absolute;
         left: 48%;
-        bottom: 5vh;
+        bottom: 3vh;
         z-index: 100;
         transition: bottom 0.3s ease-in-out;
         &:hover {
-          bottom: 3vh;
+          bottom: 2vh;
         }
       }
     }
@@ -378,12 +372,12 @@ body {
   background-size: cover;
   background-position: left bottom;
   h1 {
-    font-size: 5.25rem;
+    font-size: 10rem;
     font-family: Mont;
     color: #fff;
     margin-bottom: 2rem;
     display: inline-block;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0),#d403df);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #d403df);
     background-size: 100% 12px;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -391,27 +385,24 @@ body {
   p {
     font-weight: 300;
     font-family: "Open Sans";
-    font-size: 1.4rem;
+    font-size: 3rem;
     color: #fff;
   }
   .row {
     margin-bottom: 4rem;
     .aboutMeText {
       text-align: left;
-      padding-left: 6rem;
-      padding-top: 6rem;
-      padding-right: 3rem;
-    }
-    .aboutMeImg {
-      padding: 0;
+      padding-left: 12rem;
+      padding-top: 5rem;
+      padding-right: 5rem;
     }
     .customAboutMeText {
-      font-size: 6rem;
+      font-size: 10rem;
       font-family: Roboto;
       font-weight: 900;
       color: #d403df;
       text-shadow: 0px 6px 0px #96009e, 0px 12px 0px #5e0063;
-      line-height: 3rem;
+      margin-top: -3.5rem;
       position: relative;
       z-index: -10;
     }
@@ -420,24 +411,9 @@ body {
     margin: 0;
     padding-top: 5rem;
     position: relative;
-    img {
-      max-width: 150px;
-      transform: rotate(-10deg);
-      position: absolute;
-      z-index: -1;
-    }
-    img:nth-child(3) {
-      transform: rotate(-190deg);
-      right: 9%;
-      top: -3%;
-    }
-    img:nth-child(1) {
-      left: 9%;
-      top: 30%;
-    }
     .quote {
       font-family: TropicalAsian;
-      font-size: 8rem;
+      font-size: 17rem;
       color: #fff;
       text-align: center;
     }
@@ -445,7 +421,7 @@ body {
       font-family: Roboto;
       font-weight: 300;
       text-align: center;
-      margin-top: -3rem;
+      margin-top: -6rem;
       font-style: italic;
       font-weight: 100;
     }
@@ -467,17 +443,19 @@ body {
   }
   .wavesTop {
     margin-top: 5rem;
+    height: 400px;
+    width: 100%;
   }
   .scrollIndicatorLink {
     .scrollIndicator {
-      width: 3%;
+      width: 2%;
       position: absolute;
-      left: 48%;
-      bottom: 20vh;
+      left: 49%;
+      bottom: 10vh;
       z-index: 100;
       transition: bottom 0.3s ease-in-out;
       &:hover {
-        bottom: 18vh;
+        bottom: 8vh;
       }
     }
   }
@@ -489,48 +467,55 @@ body {
   h1 {
     font-family: Mont;
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: 9rem;
     color: #fff;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 11rem;
     span {
       background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fa7268);
-      background-size: 100% 20px;
+      background-size: 100% 30px;
       background-position: left bottom;
       background-repeat: no-repeat;
     }
   }
   .container-fluid {
-    padding: 0 5vw;
+    padding: 0 8vw;
   }
   .textHowIWork {
-    margin-top: 4rem;
     padding-left: 4rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     h2 {
-      font-size: 3.5rem;
-      padding-top: 2rem;
+      font-size: 6rem;
       font-family: Inter;
       font-weight: 700;
       color: #fff;
+      span {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fa7268);
+        background-size: 100% 15px;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+      }
     }
     p {
-      font-size: 1.6rem;
+      font-size: 3rem;
       color: #fff;
       font-family: Roboto;
       font-weight: 100;
-      line-height: 25px;
       letter-spacing: 1px;
       margin-bottom: 0;
-      position: relative;
       z-index: 10;
     }
   }
   .imgHowIWork {
     display: flex;
     justify-content: center;
+    align-items: center;
     img {
-      width: 60%;
+      width: 50%;
     }
   }
   .bold {
@@ -540,24 +525,24 @@ body {
     padding: 4rem 0;
     .step {
       h3 {
-        font-size: 2.5rem;
+        font-size: 5rem;
         font-family: Inter;
         font-weight: 700;
         color: #fff;
         span {
           background-image: linear-gradient(90deg, #ef7800, #fef506);
-          background-size: 100% 3px;
+          background-size: 100% 8px;
           background-position: left bottom;
           background-repeat: no-repeat;
         }
       }
       p {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: #fff;
         font-family: "Open Sans";
       }
       .stat {
-        font-size: 1rem;
+        font-size: 2rem;
         color: #00fff0;
       }
       text-align: center;
