@@ -10,6 +10,7 @@ body {
     rgb(219, 219, 219) 50%,
     rgba(255, 255, 255, 1) 70%
   );
+  background-repeat: no-repeat;
 }
 * {
   outline: 0;
@@ -23,16 +24,16 @@ body {
 ::-webkit-scrollbar-track{
   background-color: rgba(0, 0, 0, .6);
 }
-.backToTop{
+.backToTop {
   opacity: 0;
   img {
-    width: 50px;
+    width: 100px;
     position: fixed;
     z-index: 1000000;
     bottom: 3vh;
     right: 2vw;
     background-color: #ba1cc2;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1000px;
     cursor: pointer;
   }
@@ -51,21 +52,80 @@ body {
   text-shadow: 0px 0px 15px #000;
   position: relative;
   h1 {
-    font-size: 7rem;
+    font-size: 15rem;
     font-family: "PT Serif";
   }
   p {
     font-family: consolas;
-    font-size: 1.5rem;
+    font-size: 4rem;
     letter-spacing: 1px;
   }
   .scrollIndicatorLink {
+    img {
+      width: 3%;
+      position: absolute;
+      left: 49%;
+      bottom: 4vh;
+      z-index: 100;
+      transition: bottom 0.3s ease-in-out;
+      &:hover {
+        bottom: 3vh;
+      }
+    }
+  }
+  .goBackContainer{
+    display: inline;
     position: absolute;
-    width: 4%;
-    bottom: 3vh;
-    transition: 0.3s ease-in-out;
+    top: 3vh;
+    left: 2vw;
+    svg{
+      width: 10%;
+      fill: #fff;
+      transition: .2s ease-in-out;
+    }
+    p{
+      text-align: left;
+      font-size: 2rem !important;
+      a{
+        transition: .2s ease-in-out;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &:hover{
+      a{
+        color: #ba1cc2;
+      }
+      svg{
+        fill: #ba1cc2;
+      }
+    }
+  }
+  .globe {
+    position: absolute;
+    color: #fff;
+    top: 3%;
+    right: 2%;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
     &:hover {
-      bottom: 1vh;
+      color: #d403df;
+    }
+  }
+  #google_translate_element {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: inline;
+    .goog-te-gadget-simple {
+      background-color: transparent;
+      border: 0;
+    }
+    .goog-te-menu-value {
+      display: none;
+    }
+    img {
+      display: none;
     }
   }
 }
@@ -73,9 +133,9 @@ body {
   padding-bottom: 5rem;
   h1 {
     font-family: "PT Serif";
-    font-size: 4rem;
+    font-size: 8rem;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 8rem;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
     span {
       background-image: linear-gradient(#f5b505, #f5b505);
@@ -86,7 +146,7 @@ body {
     }
   }
   .cardRow {
-    margin: 4rem 8rem 0 8rem;
+    margin: 5rem 8rem 0 8rem;
     .badge{
       font-weight: 400;
     }
@@ -109,8 +169,15 @@ body {
           position: relative;
           z-index: 2;
           background-color: #fff;
+          padding: 2rem 3rem;
+          h5{
+            font-size: 2.5rem;
+          }
+          p{
+            font-size: 2rem;
+          }
           a {
-            font-size: 1.2rem;
+            font-size: 2rem;
             color: #2f2f2f;
             font-family: Roboto;
             font-weight: 700;
@@ -135,7 +202,7 @@ body {
     }
   }
   .tipSlikaDiv{
-    width: 25%;
+    width: 40%;
     margin: 0 auto;
     padding-top: 2rem;
     ul{
@@ -144,9 +211,33 @@ body {
       justify-content: space-between;
       li{
         display: inline;
-        font-size: 1.3rem;
+        font-size: 3rem;
         cursor: pointer;
+        @include button(#800A89);
+        transition: .2s ease-in-out;
+        &:hover{
+          transition-delay: 1s;
+          color: #fff;
+        }
       }
+    }
+  }
+}
+footer {
+  text-align: center;
+  .copyright p {
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0%;
+  }
+  .iconsCredits {
+    opacity: 0.7;
+    font-size: 1.5rem;
+    a {
+      text-decoration: none;
+      color: #000000;
     }
   }
 }

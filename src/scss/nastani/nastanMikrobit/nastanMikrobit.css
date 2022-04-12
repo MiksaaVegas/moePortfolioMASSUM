@@ -7,6 +7,34 @@ body {
       -ms-user-select: none;
           user-select: none;
   background: linear-gradient(45deg, rgb(255, 255, 255) 30%, rgb(219, 219, 219) 50%, rgb(255, 255, 255) 70%);
+  background-repeat: no-repeat;
+}
+body .globe {
+  position: absolute;
+  color: #fff;
+  top: 3%;
+  right: 2%;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+body .globe:hover {
+  color: #00f9ff;
+}
+body #google_translate_element {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  display: inline;
+}
+body #google_translate_element .goog-te-gadget-simple {
+  background-color: transparent;
+  border: 0;
+}
+body #google_translate_element .goog-te-menu-value {
+  display: none;
+}
+body #google_translate_element img {
+  display: none;
 }
 
 * {
@@ -29,19 +57,21 @@ body {
   opacity: 0;
 }
 .backToTop img {
-  width: 50px;
+  width: 100px;
   position: fixed;
   z-index: 1000000;
   bottom: 3vh;
   right: 2vw;
   background-color: #00f9ff;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1000px;
   cursor: pointer;
 }
 
 .nastaniHero {
   background-image: url(../../../../img/projects/nastani/microbit/microbitHero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .nastaniHero .nastaniHeroCol {
   height: 100vh;
@@ -53,8 +83,10 @@ body {
 }
 .nastaniHero .nastaniHeroCol h1 {
   font-family: Mont;
-  font-size: 5rem !important;
+  padding: 0 25rem;
+  font-size: 8rem !important;
   color: #e6e6e6;
+  margin-top: 5vh;
 }
 .nastaniHero .nastaniHeroCol h1 span {
   background-image: linear-gradient(90deg, #00f9ff, #095ab0);
@@ -82,6 +114,9 @@ body {
 .zaNastanot {
   padding-top: 5rem;
 }
+.zaNastanot .container-fluid {
+  padding: 0 20rem;
+}
 .zaNastanot .resizeImg {
   width: 80%;
   display: inline-block;
@@ -90,42 +125,46 @@ body {
 .zaNastanot h2 {
   text-align: center;
   font-family: Mont;
-  font-size: 4rem;
+  font-size: 8rem;
   padding-bottom: 1rem;
 }
 .zaNastanot h2 span {
   background-image: linear-gradient(90deg, #00f9ff, #095ab0);
-  background-size: 100% 10px;
+  background-size: 100% 15px;
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-position-y: 62px;
+  background-position-y: 135px;
 }
 .zaNastanot .zaNastanotCol {
   text-align: center;
 }
 .zaNastanot .zaNastanotCol p {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   font-family: Inter;
   font-weight: 600;
 }
+.zaNastanot .zaNastanotColIMG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .zaNastanot .nastaniPara2 {
-  margin-top: 7rem;
-  padding: 0 10rem;
+  margin-top: 10rem;
 }
 .zaNastanot .nastaniPara2 .zaNastanotCol {
   text-align: left;
 }
 .zaNastanot .nastaniPara2 .zaNastanotCol h3 {
   font-family: Mont;
-  font-size: 3rem;
+  font-size: 5rem;
   padding-bottom: 1rem;
 }
 .zaNastanot .nastaniPara2 .zaNastanotCol h3 span {
   background-image: linear-gradient(90deg, #00f9ff, #095ab0);
-  background-size: 100% 6px;
+  background-size: 100% 10px;
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-position-y: 50px;
+  background-position-y: 80px;
 }
 .zaNastanot .nastaniPara2 .nastaniTextRight {
   text-align: right;
@@ -134,4 +173,22 @@ body {
 @font-face {
   font-family: Mont;
   src: url(../../../../fonts/Mont.otf);
+}
+footer {
+  text-align: center;
+}
+footer .copyright p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 3.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0%;
+}
+footer .iconsCredits {
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+footer .iconsCredits a {
+  text-decoration: none;
+  color: #000000;
 }/*# sourceMappingURL=nastanMikrobit.css.map */

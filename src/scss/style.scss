@@ -22,16 +22,29 @@ body {
 * {
   outline: 0;
 }
+.scrollIndicatorLink {
+  img {
+    width: 3%;
+    position: absolute;
+    left: 49%;
+    bottom: 4vh;
+    z-index: 100;
+    transition: bottom 0.3s ease-in-out;
+    &:hover {
+      bottom: 3vh;
+    }
+  }
+}
 .backToTop {
   opacity: 0;
   img {
-    width: 50px;
+    width: 100px;
     position: fixed;
     z-index: 1000000;
     bottom: 3vh;
     right: 2vw;
     background-color: #ba1cc2;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1000px;
     cursor: pointer;
   }
@@ -87,58 +100,6 @@ body {
     transition: color 0.3s ease-in-out;
     &:hover {
       color: #d403df;
-    }
-  }
-  dialog {
-    border: none;
-    border-radius: 20px;
-    h1 {
-      text-align: center;
-      font-family: Inter;
-      font-weight: 800;
-      color: #000;
-    }
-    a {
-      background-color: transparent;
-      border: 0;
-      padding: 0%;
-      margin: 0.5rem !important;
-    }
-    .dialogButton {
-      display: flex;
-      justify-content: center;
-      button {
-        background-color: #fff;
-        color: #f54538;
-        border: 1px solid #fff;
-        border-radius: 10px;
-        padding: 0.3rem 0.75rem;
-        vertical-align: middle;
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        transition: border 0.3s ease-in-out;
-        &:hover {
-          border: 1px solid #f54538;
-        }
-      }
-    }
-  }
-  dialog::backdrop {
-    background-color: rgba(26, 0, 22, 0.7);
-  }
-  .scrollIndicatorLink {
-    border: 0;
-    background-color: transparent;
-    img {
-      width: 3%;
-      position: absolute;
-      bottom: 5vh;
-      left: 48%;
-      right: auto;
-      transition: bottom 0.3s ease-in-out;
-      &:hover {
-        bottom: 3vh;
-      }
     }
   }
   #google_translate_element {
@@ -224,12 +185,12 @@ body {
       a {
         text-decoration: none;
         background-image: linear-gradient(90deg, #f55d05, #47008f);
-        background-size: 0% 5px;
+        background-size: 0% 10px;
         background-repeat: no-repeat;
         background-position: left bottom;
         transition: 0.3s ease-in-out;
         &:hover {
-          background-size: 100% 5px;
+          background-size: 100% 10px;
         }
       }
     }
@@ -262,21 +223,6 @@ body {
       }
     }
   }
-  .scrollIndicatorLink {
-    border: 0;
-    background-color: transparent;
-    .scrollIndicator {
-      width: 3%;
-      position: absolute;
-      left: 48%;
-      bottom: 3vh;
-      z-index: 100;
-      transition: bottom 0.3s ease-in-out;
-      &:hover {
-        bottom: 2vh;
-      }
-    }
-  }
 }
 .sertifikatiSection {
   position: relative;
@@ -292,11 +238,6 @@ body {
       font-size: 10rem;
       padding-top: 2rem;
     }
-    p {
-      font-weight: 300;
-      font-family: "Open Sans";
-      font-size: 3rem;
-    }
   }
   .background {
     width: 100vw;
@@ -305,6 +246,9 @@ body {
   }
   .swiper {
     max-width: 40vw;
+    .swiper-slide{
+      cursor: all-scroll;
+    }
   }
   .swiperContainer {
     height: 75%;
@@ -337,23 +281,6 @@ body {
         $blurRadius: (random() + 0.5) * 15vmin * 0.5;
         $x: if(random() > 0.5, -1, 1);
         box-shadow: (15vmin * 2 * $x) 0 $blurRadius currentColor;
-      }
-    }
-  }
-  .scrollContainer {
-    .scrollIndicatorLink {
-      border: 0;
-      background-color: transparent;
-      .scrollIndicator {
-        width: 3%;
-        position: absolute;
-        left: 48%;
-        bottom: 3vh;
-        z-index: 100;
-        transition: bottom 0.3s ease-in-out;
-        &:hover {
-          bottom: 2vh;
-        }
       }
     }
   }
@@ -411,6 +338,7 @@ body {
     margin: 0;
     padding-top: 5rem;
     position: relative;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
     .quote {
       font-family: TropicalAsian;
       font-size: 17rem;
@@ -446,22 +374,17 @@ body {
     height: 400px;
     width: 100%;
   }
-  .scrollIndicatorLink {
-    .scrollIndicator {
-      width: 2%;
-      position: absolute;
-      left: 49%;
-      bottom: 10vh;
-      z-index: 100;
-      transition: bottom 0.3s ease-in-out;
-      &:hover {
-        bottom: 8vh;
-      }
-    }
+  .jas{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    width: 30%;
+    z-index: -100;
   }
 }
 .howIWorkSection {
   position: relative;
+  z-index: 1000;
   padding-bottom: 5rem;
   background: linear-gradient(180deg, #6e0568 0%, #5107e6 100%);
   h1 {
@@ -479,7 +402,10 @@ body {
     }
   }
   .container-fluid {
-    padding: 0 8vw;
+    padding: 0 8%;
+    .row{
+      margin: 0;
+    }
   }
   .textHowIWork {
     padding-left: 4rem;
@@ -522,8 +448,9 @@ body {
     font-weight: 700;
   }
   .workProcess {
-    padding: 4rem 0;
+    padding: 4rem 1rem;
     .step {
+      padding: 0;
       h3 {
         font-size: 5rem;
         font-family: Inter;
@@ -537,6 +464,7 @@ body {
         }
       }
       p {
+        padding: 0;
         font-size: 2.5rem;
         color: #fff;
         font-family: "Open Sans";
@@ -546,19 +474,6 @@ body {
         color: #00fff0;
       }
       text-align: center;
-    }
-  }
-  .scrollIndicatorLink {
-    .scrollIndicator {
-      width: 3%;
-      position: absolute;
-      left: 48%;
-      bottom: 0vh;
-      z-index: 100;
-      transition: bottom 0.3s ease-in-out;
-      &:hover {
-        bottom: -2vh;
-      }
     }
   }
 }
@@ -573,78 +488,97 @@ body {
     width: 100vw;
     position: absolute;
     left: 0;
+    height: 200px;
   }
   h1 {
     padding-top: 13rem;
     font-family: Mont;
-    font-size: 5rem;
+    font-size: 10rem;
   }
   p {
     font-family: Consolas;
-    font-size: 2rem;
+    font-size: 4rem;
     letter-spacing: 2px;
   }
-  .container {
+  .container-fluid {
     padding-top: 3rem;
+    .col-md-6{
+      padding: 0;
+    }
+    .CTAInputCol1{
+      padding-right: .5rem;
+    }
+    .CTAInputCol2{
+      padding-left: .5rem;
+    }
+    #textInput{
+      float: right;
+    }
+    #emailInput{
+      float: left;
+    }
     input {
-      width: 95%;
+      width: 60%;
       padding: 0.75rem;
       border-radius: 20px;
-      border: 5px solid #fff;
+      border: 8px solid #fff;
       opacity: 0.8;
+      font-size: 2rem;
       transition: border 0.3s ease-in-out;
       &:hover {
-        border: #75b6ff 5px solid;
+        border: #75b6ff 8px solid;
       }
       &::placeholder {
         font-style: italic;
-        font-size: 1.2rem;
       }
     }
-    .messasgeRow {
-      padding: 1.25rem 28px;
+    .messageRow {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: center;
       textarea {
         resize: none;
+        width: 60%;
         position: relative;
         z-index: 1;
         padding: 1rem;
         border-radius: 20px;
-        border: 5px solid #fff;
+        border: 8px solid #fff;
         opacity: 0.8;
+        font-size: 2rem;
         &::placeholder {
           font-style: italic;
-          font-size: 1.2rem;
         }
         transition: border 0.3s ease-in-out;
         &:hover {
-          border: #75b6ff 5px solid;
+          border: #75b6ff 8px solid;
         }
       }
     }
   }
   button {
-    border: 5px solid #fff;
+    border: 8px solid #fff;
     border-radius: 100px;
-    padding: 0.5rem 1.8rem;
+    padding: .75rem 2rem;
     font-family: Roboto;
     font-weight: 300;
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    font-size: 2.3rem;
+    margin-top: 2rem;
     transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
     &:hover {
-      border: #75b6ff 5px solid;
+      border: #75b6ff 8px solid;
       transform: scale(1.1);
     }
   }
   .socialMediaCTA {
     .container {
-      padding-top: 30px;
+      padding-top: 2.5rem;
     }
     margin-bottom: 50px;
     ul {
       text-align: center;
       list-style-type: none;
-      padding-left: 0;
+      padding-left: 0 !important;
       li {
         margin: 0.15rem 1rem;
         display: inline;
@@ -663,13 +597,13 @@ body {
     .copyright p {
       font-family: Roboto;
       font-weight: 100;
-      font-size: 1.5rem;
+      font-size: 3.5rem;
       margin-top: 2.5rem;
       margin-bottom: 0%;
     }
     .iconsCredits {
       opacity: 0.7;
-      font-size: 0.85rem;
+      font-size: 1.5rem;
       a {
         text-decoration: none;
         color: #fafafa;

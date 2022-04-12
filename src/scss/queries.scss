@@ -10,7 +10,7 @@
     a {
       font-size: 2.5rem !important;
       margin: 0 1rem !important;
-      padding: 1.25rem 1.2rem !important;
+      padding: 0.6rem 2rem !important;
     }
   }
   .heroButtons {
@@ -37,8 +37,35 @@
       }
     }
   }
+  .cta {
+    .container-fluid {
+      input {
+        width: 75%;
+      }
+      textarea {
+        flex-basis: 75%;
+      }
+    }
+  }
 }
 @media (max-width: 2800px) {
+  .zaNastanot {
+    h2 {
+      font-size: 6rem !important;
+      span {
+        background-position-y: 100px;
+      }
+    }
+    h3{
+      font-size: 4rem !important;
+      span {
+        background-position-y: 70px !important;
+      }
+    }
+    p {
+      font-size: 2rem !important;
+    }
+  }
   .projectsSection {
     .projectsText {
       padding-right: 2rem !important;
@@ -71,33 +98,60 @@
       }
     }
   }
-  .howIWorkSection{
-    h1{
+  .howIWorkSection {
+    h1 {
       font-size: 7rem !important;
     }
-    h2{
+    h2 {
       font-size: 4.5rem !important;
       padding-top: 1rem !important;
     }
-    p{
+    p {
       font-size: 2.65rem !important;
       line-height: 3.5rem !important;
     }
-    .workProcess{
+    .workProcess {
       padding: 6rem 0;
-      h3{
+      h3 {
         font-size: 3rem !important;
       }
-      p{
+      p {
         font-size: 1.75rem !important;
       }
     }
-    .imgHowIWork{
+    .imgHowIWork {
       padding-top: 2.5rem !important;
+    }
+  }
+  .cta {
+    h1 {
+      font-size: 8rem !important;
+    }
+    p {
+      font-size: 3rem !important;
     }
   }
 }
 @media (max-width: 2600px) {
+  .nastaniHero {
+    .container-fluid {
+      h1 {
+        font-size: 5rem !important;
+      }
+    }
+  }
+  .globe {
+    width: 64px;
+    height: 64px;
+  }
+  body {
+    .backToTop {
+      img {
+        width: 60px;
+        padding: 1.1rem !important;
+      }
+    }
+  }
   .aboutMeSection {
     .aboutMeText {
       h1 {
@@ -111,17 +165,24 @@
       }
     }
   }
-  .howIWorkSection{
-    h1{
+  .howIWorkSection {
+    h1 {
       margin-bottom: 5.5rem !important;
+    }
+  }
+  .projects {
+    .tipSlikaDiv {
+      width: 60% !important;
+      li {
+        font-size: 2rem !important;
+      }
     }
   }
 }
 @media (max-width: 2450px) {
   .projectsSection {
     .container-fluid {
-      padding-left: 10rem !important;
-      padding-right: 10rem !important;
+      padding: 0 10rem !important;
       .swiper {
         height: 100%;
       }
@@ -131,14 +192,48 @@
     h1 {
       font-size: 8rem !important;
     }
-    p {
-      font-size: 2.75rem !important;
-    }
     .swiperContainer {
       height: 80%;
       .swiper {
         max-width: 60vw !important;
       }
+    }
+  }
+  .heroProjects {
+    h1 {
+      font-size: 10rem !important;
+    }
+    p {
+      font-size: 3rem !important;
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 6rem !important;
+      padding-top: 4rem !important;
+    }
+    .container-fluid {
+      padding: 0 5rem !important;
+    }
+  }
+  .zaNastanot {
+    .container-fluid{
+      padding: 0 10rem !important;
+    }
+    h2 {
+      font-size: 4.5rem !important;
+      span {
+        background-position-y: 80px;
+      }
+    }
+    h3{
+      font-size: 3.25rem !important;
+      span {
+        background-position-y: 55px !important;
+      }
+    }
+    p {
+      font-size: 1.65rem !important;
     }
   }
 }
@@ -165,12 +260,32 @@
       }
     }
   }
+  .cta {
+    .copyright p {
+      font-size: 2rem !important;
+    }
+    .iconsCredits {
+      font-size: 1rem !important;
+    }
+    .container-fluid {
+      input,
+      textarea {
+        font-size: 1.5rem !important;
+      }
+    }
+    button {
+      font-size: 1.7rem !important;
+      padding: 0.5rem 1.7rem !important;
+    }
+    .socialMediaCTA {
+      svg {
+        width: 32px !important;
+        height: 32px !important;
+      }
+    }
+  }
 }
 @media (max-width: 2200px) {
-  .globe {
-    width: 64px;
-    height: 64px;
-  }
   .projectsSection {
     .container-fluid {
       padding: 5rem 7rem 11rem 7rem !important;
@@ -202,9 +317,34 @@
       }
     }
   }
-  .aboutMeSection{
-    .wavesTop{
+  .aboutMeSection {
+    .wavesTop {
       height: 300px;
+    }
+  }
+  .cta {
+    h1 {
+      font-size: 6rem !important;
+    }
+    p {
+      font-size: 2.3rem !important;
+    }
+  }
+  .projects {
+    .tipSlikaDiv {
+      li {
+        font-size: 1.3rem !important;
+      }
+    }
+    .container-fluid {
+      .cardCol {
+        .card-body a span {
+          background-size: 100% 5px;
+          &:hover {
+            background-size: 100% 5px;
+          }
+        }
+      }
     }
   }
 }
@@ -236,6 +376,19 @@
       }
     }
   }
+  .projectsSection {
+    .swiper {
+      .swiper-slide {
+        a {
+          line-height: 1.2rem !important;
+          background-size: 0% 6px;
+          &:hover {
+            background-size: 100% 6px;
+          }
+        }
+      }
+    }
+  }
   .aboutMeSection {
     .aboutMeText {
       padding-left: 8rem !important;
@@ -262,40 +415,145 @@
       margin-top: 0 !important;
     }
   }
-  .howIWorkSection{
-    .imgHowIWork{
-      img{
+  .howIWorkSection {
+    .imgHowIWork {
+      img {
         width: 60%;
       }
     }
   }
+  .projects {
+    .container-fluid {
+      padding: 0 3rem !important;
+      .card-body {
+        padding: 1rem !important;
+        h5 {
+          font-size: 1.5rem !important;
+          .badge {
+            font-size: 1rem !important;
+          }
+        }
+        p {
+          font-size: 1rem !important;
+        }
+        a {
+          font-size: 1rem !important;
+          padding: 0.5rem 0.75rem !important;
+          span:nth-child(1),
+          span:nth-child(3) {
+            height: 3px !important;
+          }
+          span:nth-child(2),
+          span:nth-child(4) {
+            width: 3px !important;
+          }
+        }
+      }
+    }
+    .tipSlikaDiv {
+      ul {
+        padding: 0% !important;
+        li {
+          font-size: 1.3rem !important;
+          padding: 0.5rem 1.25rem !important;
+          span:nth-child(1),
+          span:nth-child(3) {
+            height: 3px !important;
+          }
+          span:nth-child(2),
+          span:nth-child(4) {
+            width: 3px !important;
+          }
+        }
+      }
+    }
+  }
+  .projectsFooter {
+    .copyright p {
+      font-size: 2rem !important;
+    }
+    .iconsCredits {
+      font-size: 1rem !important;
+    }
+  }
 }
 @media (max-width: 1920px) {
+  .nastaniHero {
+    .container-fluid {
+      h1 {
+        padding: 0 12rem !important;
+        font-size: 4rem !important;
+      }
+    }
+  }
   .heroButtons {
     a:nth-child(1) {
       margin-left: -2rem !important;
     }
   }
-  .howIWorkSection{
-    h1{
+  .howIWorkSection {
+    h1 {
       font-size: 5rem !important;
     }
-    h2{
+    h2 {
       font-size: 3.3rem !important;
     }
-    p{
+    p {
       font-size: 1.8rem !important;
       line-height: 2.5rem !important;
     }
-    .workProcess{
+    .workProcess {
       padding-bottom: 0 !important;
-      h3{
+      h3 {
         font-size: 2.5rem !important;
       }
-      p{
+      p {
         font-size: 1.5rem !important;
         padding: 0 2.5rem !important;
       }
+    }
+  }
+  .cta {
+    .container-fluid {
+      input,
+      textarea {
+        font-size: 1.15rem !important;
+        border: 5px solid #fff !important;
+        &:hover {
+          border: #75b6ff 5px solid !important;
+        }
+      }
+    }
+    button {
+      font-size: 1.4rem !important;
+      border: 5px solid #fff !important;
+      &:hover {
+        border: #75b6ff 5px solid !important;
+      }
+    }
+  }
+  .zaNastanot {
+    padding-top: 0 !important;
+    .container-fluid{
+      padding: 0 5rem !important;
+      margin-top: 5rem !important;
+    }
+    h2 {
+      font-size: 3rem !important;
+      span {
+        background-position-y: 50px;
+        background-size: 100% 8px;
+      }
+    }
+    h3{
+      font-size: 2rem !important;
+      span {
+        background-position-y: 33px !important;
+        background-size: 100% 5px !important;
+      }
+    }
+    p {
+      font-size: 1.15rem !important;
     }
   }
 }
@@ -313,8 +571,24 @@
       font-size: 1.5rem !important;
     }
   }
+  .heroProjects {
+    h1 {
+      font-size: 6rem !important;
+    }
+    p {
+      font-size: 2rem !important;
+    }
+  }
 }
 @media (max-width: 1650px) {
+  body {
+    .backToTop {
+      img {
+        width: 40px !important;
+        padding: 0.8rem !important;
+      }
+    }
+  }
   .projectsSection {
     .container-fluid {
       padding: 3.5rem 4.5rem 7rem 4.5rem !important;
@@ -354,9 +628,6 @@
     h1 {
       font-size: 6rem !important;
     }
-    p {
-      font-size: 2rem !important;
-    }
   }
   .aboutMeSection {
     .aboutMeText {
@@ -373,26 +644,51 @@
         font-size: 5rem !important;
       }
     }
-    .blob4, .blob5{
+    .blob4,
+    .blob5 {
       bottom: 30%;
     }
   }
-  .howIWorkSection{
-    h1{
+  .howIWorkSection {
+    h1 {
       margin-bottom: 3rem !important;
       font-size: 3.5rem !important;
-      span{
+      span {
         background-size: 100% 15px !important;
       }
     }
-    .textHowIWork{
+    .textHowIWork {
       margin-top: 0 !important;
-      h2{
+      h2 {
         font-size: 2.5rem !important;
       }
-      p{
+      p {
         line-height: 1.75rem !important;
         font-size: 1.45rem !important;
+      }
+    }
+  }
+  .cta {
+    h1 {
+      font-size: 5rem !important;
+    }
+    p {
+      font-size: 1.7rem !important;
+    }
+    input {
+      width: 80% !important;
+    }
+    textarea {
+      flex-basis: 80% !important;
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 4rem !important;
+    }
+    .tipSlikaDiv {
+      li {
+        font-size: 1.3rem !important;
       }
     }
   }
@@ -429,12 +725,52 @@
         font-size: 1.7rem !important;
       }
     }
-    .wavesTop{
+    .wavesTop {
       height: 300px;
+    }
+  }
+  .heroProjects {
+    .goBackContainer {
+      left: 6vw;
+      svg {
+        width: 7%;
+      }
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+  .projects {
+    .container-fluid {
+      .cardRow {
+        margin: 3rem !important;
+      }
+    }
+  }
+  .zaNastanot{
+    .container-fluid{
+      margin-top: 3rem !important;
+    }
+    h2{
+      padding-bottom: 0 !important;
+    }
+    p{
+      font-size: 1rem !important;
+    }
+    h3{
+      padding: 0 !important;
     }
   }
 }
 @media (max-width: 1250px) {
+  .nastaniHero {
+    .container-fluid {
+      h1 {
+        padding: 0 2rem !important;
+        font-size: 3rem !important;
+      }
+    }
+  }
   .projectsSection {
     .container-fluid {
       .projectDesc p {
@@ -454,21 +790,75 @@
       h1 {
         font-size: 3rem !important;
       }
-      p {
+    }
+  }
+  .cta {
+    h1 {
+      font-size: 3.4rem !important;
+      padding-top: 6rem !important;
+    }
+    p {
+      font-size: 1.25rem !important;
+    }
+    .waveTransitionBottom {
+      height: 100px !important;
+    }
+    .container-fluid {
+      padding-top: 1rem !important;
+      input,
+      textarea {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+        border: 3px solid #fff !important;
+        &:hover {
+          border: #75b6ff 3px solid !important;
+        }
+      }
+    }
+    button {
+      font-size: 0.8rem !important;
+      margin-top: 0.5rem !important;
+      border: 3px solid #fff !important;
+      &:hover {
+        border: #75b6ff 3px solid !important;
+      }
+    }
+    .socialMediaCTA {
+      margin-bottom: 1rem !important;
+      .container {
+        padding-top: 1rem !important;
+        li {
+          margin: 0 0.5rem !important;
+          svg {
+            width: 16px !important;
+            height: 16px !important;
+          }
+        }
+      }
+    }
+    footer {
+      .copyright p {
+        margin-top: 0 !important;
         font-size: 1rem !important;
+      }
+      .iconsCredits {
+        font-size: 0.5rem !important;
       }
     }
   }
 }
 @media (max-width: 1150px) {
+  .heroProjects {
+    h1 {
+      font-size: 4rem !important;
+    }
+    p {
+      font-size: 1.5rem !important;
+    }
+  }
   .globe {
     width: 32px;
     height: 32px;
-  }
-  .heroText {
-    h1 {
-      font-size: 1.5rem !important;
-    }
   }
   .projectsSection {
     .container-fluid {
@@ -508,28 +898,33 @@
     }
     .blob4,
     .blob5 {
-      bottom: 33% !important;
+      bottom: 20% !important;
     }
-    .wavesTop{
+    .wavesTop {
       height: 130px !important;
     }
   }
-  .howIWorkSection{
-    .textHowIWork{
+  .howIWorkSection {
+    .textHowIWork {
       padding: 0 0rem !important;
     }
   }
 }
 @media (max-width: 991px) {
+  .heroProjects {
+    h1 {
+      font-size: 3rem !important;
+    }
+    p {
+      font-size: 1rem !important;
+    }
+  }
   .heroSection {
     .heroText {
-      margin-left: 0 !important;
+      text-align: center;
       width: 80%;
       margin: 0 10% !important;
-      margin-top: 10vh !important;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin-top: 20vh !important;
     }
     .scrollIndicator {
       width: 5% !important;
@@ -573,26 +968,211 @@
   .aboutMeSection {
     .aboutMeText {
       text-align: center !important;
-      margin-bottom: 10rem;
+      margin-bottom: 7rem !important;
     }
     .quoteContainer {
       .rapper {
         font-size: 1.5rem !important;
       }
     }
-    .wavesTop{
+    .wavesTop {
       height: 90px !important;
     }
+    .blob4,
+    .blob5 {
+      bottom: 14% !important;
+    }
+    .aboutMeImg {
+      .jas {
+        top: 40%;
+        left: 35%;
+      }
+    }
+    .blob4,
+    .blob5 {
+      display: none !important;
+    }
   }
-  .howIWorkSection{
-    .imgHowIWork{
-      img{
-        width: 30%;
-        margin: 0 35%;
+  .howIWorkSection {
+    .imgHowIWork {
+      display: none;
+    }
+    h1 {
+      font-size: 3rem !important;
+      margin-bottom: 2rem !important;
+      span {
+        background-size: 100% 8px !important;
+      }
+    }
+    .textHowIWork {
+      h2 {
+        font-size: 2rem !important;
+        span {
+          background-size: 100% 5px !important;
+        }
+      }
+      p {
+        font-size: 1rem !important;
+        letter-spacing: 0;
+        padding: 0 5rem;
+        line-height: 1.5rem !important;
+      }
+    }
+    .workProcess {
+      padding: 2rem !important;
+      h3 {
+        font-size: 2rem !important;
+        span {
+          background-size: 100% 5px !important;
+        }
+      }
+      p {
+        font-size: 1.25rem !important;
+        line-height: 1.2rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+      .stat {
+        margin-top: -0.75rem !important;
+        font-size: 0.9rem !important;
+        margin-bottom: 0 !important;
       }
     }
   }
-
+  .cta {
+    h1 {
+      font-size: 3rem !important;
+    }
+    p {
+      font-size: 0.9rem !important;
+      letter-spacing: 1px !important;
+      margin: 0;
+    }
+    .container-fluid {
+      .CTAInputCol1 {
+        padding-right: 0.25rem !important;
+      }
+      .CTAInputCol2 {
+        padding-left: 0.25rem !important;
+      }
+      .messageRow {
+        padding: 0.75rem 0 !important;
+      }
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 4rem !important;
+    }
+    .container-fluid {
+      padding: 0 10rem !important;
+      .cardRow {
+        .card {
+          margin-top: 2rem !important;
+          h5 {
+            font-size: 1rem !important;
+            .badge {
+              font-size: 0.8rem !important;
+            }
+          }
+          p {
+            font-size: 0.8rem !important;
+          }
+        }
+      }
+    }
+  }
+  .projects {
+    .tipSlikaDiv {
+      li {
+        font-size: 1rem !important;
+        padding: 0 0.5rem !important;
+      }
+    }
+    .container-fluid {
+      padding: 0 3rem !important;
+    }
+  }
+  .zaNastanot{
+    h3, p{
+      text-align: center;
+    }
+    h3{
+      padding-top: 1rem !important;
+    }
+    .resizeImg{
+      margin: 0 !important;
+    }
+    .zaNastanotCol{
+      text-align: center !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .nastaniHero {
+    .container-fluid {
+      h1 {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+  .cta {
+    .waveTransitionBottom {
+      height: 70px !important;
+    }
+    h1 {
+      padding-top: 4rem !important;
+    }
+    p {
+      padding: 0 3rem !important;
+    }
+    .container-fluid {
+      #textInput {
+        float: none;
+      }
+      #emailInput {
+        float: none;
+      }
+      .CTAInputCol1,
+      .CTAInputCol2,
+      .messageRow {
+        padding: 0.25rem 0 !important;
+      }
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 3rem !important;
+    }
+    .tipSlikaDiv {
+      padding: 0 !important;
+      ul {
+        padding: 0% !important;
+        display: block !important;
+        text-align: center;
+        li {
+          margin: 0.5rem 0 !important;
+          display: block !important;
+        }
+      }
+    }
+    .container-fluid {
+      padding: 0 !important;
+      .cardCol {
+        padding: 0 !important;
+      }
+    }
+  }
+  .projectsFooter {
+    .copyright {
+      p {
+        font-size: 1.1rem !important;
+        margin: 0 !important;
+      }
+      .iconsCredits {
+        font-size: 0.7rem !important;
+      }
+    }
+  }
 }
 @media (max-width: 750px) {
   .sertifikatiSection {
@@ -601,13 +1181,26 @@
     }
   }
   .aboutMeSection {
-    .blob4,
-    .blob5 {
-      display: none !important;
+    .jas {
+      width: 50%;
+      left: 25% !important;
+      bottom: 10% !important;
     }
   }
 }
 @media (max-width: 650px) {
+  .heroDesc {
+    padding: 0 5rem;
+  }
+  .scrollIndicatorLink {
+    img {
+      bottom: 13vh;
+      left: 47%;
+      &:hover {
+        bottom: 10vh;
+      }
+    }
+  }
   .projectsSection {
     .container-fluid {
       padding: 1rem 1.5rem !important;
@@ -617,6 +1210,7 @@
         }
         p {
           font-size: 0.75rem !important;
+          padding: 1rem !important;
         }
         a {
           font-size: 0.8rem !important;
@@ -628,26 +1222,165 @@
     .quoteContainer {
       .quote {
         font-size: 4rem !important;
+        line-height: 4rem !important;
+        margin-bottom: 0 !important;
       }
-      .rapper{
+      .rapper {
         font-size: 1.2rem !important;
+        padding-top: 0 !important;
+        margin: 0 !important;
       }
     }
-    .aboutMeText{
+    .aboutMeText {
       padding: 2rem 1.5rem 0 1.5rem !important;
-      h1{
+      h1 {
         font-size: 3.5rem !important;
       }
-      p{
+      p {
         font-size: 1rem !important;
       }
-      .customAboutMeText{
+      .customAboutMeText {
         font-size: 3.2rem !important;
       }
     }
   }
+  .howIWorkSection {
+    h1 {
+      font-size: 2.3rem !important;
+      margin-bottom: 1rem !important;
+      span {
+        background-size: 100% 6px !important;
+      }
+    }
+    .container-fluid {
+      .textHowIWork {
+        h2 {
+          font-size: 1.8rem !important;
+        }
+        p {
+          font-size: 0.9rem !important;
+          line-height: 1.2rem !important;
+          padding: 0 2rem !important;
+        }
+      }
+      h3 {
+        font-size: 1.6rem !important;
+      }
+      p {
+        font-size: 1rem !important;
+      }
+      .stat {
+        font-size: 0.7rem !important;
+      }
+    }
+  }
 }
-//!QUERIES SO HEIGHT
+@media (max-width: 575px) {
+  .zaNastanot{
+    .container-fluid{
+      padding: 0 2rem !important;
+    }
+    h2{
+      font-size: 2rem !important;
+      span{
+        background-position-y: 30px;
+        background-size: 100% 5px;
+      }
+    }
+    h3{
+      font-size: 1.6rem !important;
+      span{
+        background-position-y: 25px !important;
+        background-size: 100% 5px;
+      }
+    }
+    p{
+      font-size: .85rem !important;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .aboutMeSection {
+    .container-fluid {
+      .aboutMeText {
+        margin-bottom: 5rem !important;
+        h1 {
+          font-size: 2rem !important;
+          background-size: 100% 6px;
+        }
+        p {
+          font-size: 0.85rem !important;
+        }
+        .customAboutMeText {
+          line-height: 0 !important;
+          margin-top: -1rem !important;
+          font-size: 2.5rem !important;
+          text-shadow: 0px 3px 0px #96009e, 0px 6px 0px #5e0063;
+        }
+      }
+    }
+    .quoteContainer {
+      .quote {
+        font-size: 2.5rem !important;
+        line-height: 2.5rem !important;
+      }
+      .rapper {
+        font-size: 1.1rem !important;
+      }
+    }
+  }
+  .projects {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+  .aboutMeSection {
+    .container-fluid {
+      .aboutMeImg {
+        img {
+          width: 70% !important;
+          left: 16% !important;
+        }
+      }
+    }
+  }
+  .howIWorkSection {
+    h1 {
+      font-size: 1.8rem !important;
+    }
+    .container-fluid {
+      padding: 0 !important;
+      .textHowIWork {
+        h2 {
+          font-size: 1.5rem !important;
+        }
+        p {
+          font-size: 0.9rem !important;
+          margin-bottom: 1rem !important;
+        }
+      }
+    }
+  }
+  .nastaniHero{
+    .container-fluid{
+      h1{
+        padding: 0 !important;
+      }
+    }
+  }
+  .zaNastanot{
+    h2{
+      font-size: 1.65rem !important;
+    }
+  }
+}
 @media (max-height: 1400px) {
   .sertifikatiSection {
     .swiperContainer {
@@ -658,9 +1391,6 @@
     }
     h1 {
       font-size: 4.5rem !important;
-    }
-    p {
-      font-size: 2rem !important;
     }
   }
 }

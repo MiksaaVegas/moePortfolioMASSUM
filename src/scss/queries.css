@@ -9,7 +9,7 @@
   .heroText a {
     font-size: 2.5rem !important;
     margin: 0 1rem !important;
-    padding: 1.25rem 1.2rem !important;
+    padding: 0.6rem 2rem !important;
   }
 
   .heroButtons a:nth-child(1) {
@@ -32,8 +32,31 @@
   .projectsSection .container-fluid .projectsText p {
     font-size: 2.5rem !important;
   }
+
+  .cta .container-fluid input {
+    width: 75%;
+  }
+  .cta .container-fluid textarea {
+    flex-basis: 75%;
+  }
 }
 @media (max-width: 2800px) {
+  .zaNastanot h2 {
+    font-size: 6rem !important;
+  }
+  .zaNastanot h2 span {
+    background-position-y: 100px;
+  }
+  .zaNastanot h3 {
+    font-size: 4rem !important;
+  }
+  .zaNastanot h3 span {
+    background-position-y: 70px !important;
+  }
+  .zaNastanot p {
+    font-size: 2rem !important;
+  }
+
   .projectsSection .projectsText {
     padding-right: 2rem !important;
   }
@@ -84,8 +107,29 @@
   .howIWorkSection .imgHowIWork {
     padding-top: 2.5rem !important;
   }
+
+  .cta h1 {
+    font-size: 8rem !important;
+  }
+  .cta p {
+    font-size: 3rem !important;
+  }
 }
 @media (max-width: 2600px) {
+  .nastaniHero .container-fluid h1 {
+    font-size: 5rem !important;
+  }
+
+  .globe {
+    width: 64px;
+    height: 64px;
+  }
+
+  body .backToTop img {
+    width: 60px;
+    padding: 1.1rem !important;
+  }
+
   .aboutMeSection .aboutMeText h1 {
     font-size: 7rem !important;
   }
@@ -99,11 +143,17 @@
   .howIWorkSection h1 {
     margin-bottom: 5.5rem !important;
   }
+
+  .projects .tipSlikaDiv {
+    width: 60% !important;
+  }
+  .projects .tipSlikaDiv li {
+    font-size: 2rem !important;
+  }
 }
 @media (max-width: 2450px) {
   .projectsSection .container-fluid {
-    padding-left: 10rem !important;
-    padding-right: 10rem !important;
+    padding: 0 10rem !important;
   }
   .projectsSection .container-fluid .swiper {
     height: 100%;
@@ -112,14 +162,45 @@
   .sertifikatiSection h1 {
     font-size: 8rem !important;
   }
-  .sertifikatiSection p {
-    font-size: 2.75rem !important;
-  }
   .sertifikatiSection .swiperContainer {
     height: 80%;
   }
   .sertifikatiSection .swiperContainer .swiper {
     max-width: 60vw !important;
+  }
+
+  .heroProjects h1 {
+    font-size: 10rem !important;
+  }
+  .heroProjects p {
+    font-size: 3rem !important;
+  }
+
+  .projects h1 {
+    font-size: 6rem !important;
+    padding-top: 4rem !important;
+  }
+  .projects .container-fluid {
+    padding: 0 5rem !important;
+  }
+
+  .zaNastanot .container-fluid {
+    padding: 0 10rem !important;
+  }
+  .zaNastanot h2 {
+    font-size: 4.5rem !important;
+  }
+  .zaNastanot h2 span {
+    background-position-y: 80px;
+  }
+  .zaNastanot h3 {
+    font-size: 3.25rem !important;
+  }
+  .zaNastanot h3 span {
+    background-position-y: 55px !important;
+  }
+  .zaNastanot p {
+    font-size: 1.65rem !important;
   }
 }
 @media (max-width: 2350px) {
@@ -143,13 +224,27 @@
 .heroText a span:nth-child(4) {
     width: 6px !important;
   }
+
+  .cta .copyright p {
+    font-size: 2rem !important;
+  }
+  .cta .iconsCredits {
+    font-size: 1rem !important;
+  }
+  .cta .container-fluid input,
+.cta .container-fluid textarea {
+    font-size: 1.5rem !important;
+  }
+  .cta button {
+    font-size: 1.7rem !important;
+    padding: 0.5rem 1.7rem !important;
+  }
+  .cta .socialMediaCTA svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
 }
 @media (max-width: 2200px) {
-  .globe {
-    width: 64px;
-    height: 64px;
-  }
-
   .projectsSection .container-fluid {
     padding: 5rem 7rem 11rem 7rem !important;
   }
@@ -181,6 +276,23 @@
   .aboutMeSection .wavesTop {
     height: 300px;
   }
+
+  .cta h1 {
+    font-size: 6rem !important;
+  }
+  .cta p {
+    font-size: 2.3rem !important;
+  }
+
+  .projects .tipSlikaDiv li {
+    font-size: 1.3rem !important;
+  }
+  .projects .container-fluid .cardCol .card-body a span {
+    background-size: 100% 5px;
+  }
+  .projects .container-fluid .cardCol .card-body a span:hover {
+    background-size: 100% 5px;
+  }
 }
 @media (max-width: 2050px) {
   .heroText {
@@ -209,6 +321,14 @@
     margin-left: -1rem !important;
   }
 
+  .projectsSection .swiper .swiper-slide a {
+    line-height: 1.2rem !important;
+    background-size: 0% 6px;
+  }
+  .projectsSection .swiper .swiper-slide a:hover {
+    background-size: 100% 6px;
+  }
+
   .aboutMeSection .aboutMeText {
     padding-left: 8rem !important;
   }
@@ -235,8 +355,63 @@
   .howIWorkSection .imgHowIWork img {
     width: 60%;
   }
+
+  .projects .container-fluid {
+    padding: 0 3rem !important;
+  }
+  .projects .container-fluid .card-body {
+    padding: 1rem !important;
+  }
+  .projects .container-fluid .card-body h5 {
+    font-size: 1.5rem !important;
+  }
+  .projects .container-fluid .card-body h5 .badge {
+    font-size: 1rem !important;
+  }
+  .projects .container-fluid .card-body p {
+    font-size: 1rem !important;
+  }
+  .projects .container-fluid .card-body a {
+    font-size: 1rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+  .projects .container-fluid .card-body a span:nth-child(1),
+.projects .container-fluid .card-body a span:nth-child(3) {
+    height: 3px !important;
+  }
+  .projects .container-fluid .card-body a span:nth-child(2),
+.projects .container-fluid .card-body a span:nth-child(4) {
+    width: 3px !important;
+  }
+  .projects .tipSlikaDiv ul {
+    padding: 0% !important;
+  }
+  .projects .tipSlikaDiv ul li {
+    font-size: 1.3rem !important;
+    padding: 0.5rem 1.25rem !important;
+  }
+  .projects .tipSlikaDiv ul li span:nth-child(1),
+.projects .tipSlikaDiv ul li span:nth-child(3) {
+    height: 3px !important;
+  }
+  .projects .tipSlikaDiv ul li span:nth-child(2),
+.projects .tipSlikaDiv ul li span:nth-child(4) {
+    width: 3px !important;
+  }
+
+  .projectsFooter .copyright p {
+    font-size: 2rem !important;
+  }
+  .projectsFooter .iconsCredits {
+    font-size: 1rem !important;
+  }
 }
 @media (max-width: 1920px) {
+  .nastaniHero .container-fluid h1 {
+    padding: 0 12rem !important;
+    font-size: 4rem !important;
+  }
+
   .heroButtons a:nth-child(1) {
     margin-left: -2rem !important;
   }
@@ -261,6 +436,48 @@
     font-size: 1.5rem !important;
     padding: 0 2.5rem !important;
   }
+
+  .cta .container-fluid input,
+.cta .container-fluid textarea {
+    font-size: 1.15rem !important;
+    border: 5px solid #fff !important;
+  }
+  .cta .container-fluid input:hover,
+.cta .container-fluid textarea:hover {
+    border: #75b6ff 5px solid !important;
+  }
+  .cta button {
+    font-size: 1.4rem !important;
+    border: 5px solid #fff !important;
+  }
+  .cta button:hover {
+    border: #75b6ff 5px solid !important;
+  }
+
+  .zaNastanot {
+    padding-top: 0 !important;
+  }
+  .zaNastanot .container-fluid {
+    padding: 0 5rem !important;
+    margin-top: 5rem !important;
+  }
+  .zaNastanot h2 {
+    font-size: 3rem !important;
+  }
+  .zaNastanot h2 span {
+    background-position-y: 50px;
+    background-size: 100% 8px;
+  }
+  .zaNastanot h3 {
+    font-size: 2rem !important;
+  }
+  .zaNastanot h3 span {
+    background-position-y: 33px !important;
+    background-size: 100% 5px !important;
+  }
+  .zaNastanot p {
+    font-size: 1.15rem !important;
+  }
 }
 @media (max-width: 1800px) {
   .heroText h1 {
@@ -274,8 +491,20 @@
   .heroText a {
     font-size: 1.5rem !important;
   }
+
+  .heroProjects h1 {
+    font-size: 6rem !important;
+  }
+  .heroProjects p {
+    font-size: 2rem !important;
+  }
 }
 @media (max-width: 1650px) {
+  body .backToTop img {
+    width: 40px !important;
+    padding: 0.8rem !important;
+  }
+
   .projectsSection .container-fluid {
     padding: 3.5rem 4.5rem 7rem 4.5rem !important;
   }
@@ -313,9 +542,6 @@
   .sertifikatiSection h1 {
     font-size: 6rem !important;
   }
-  .sertifikatiSection p {
-    font-size: 2rem !important;
-  }
 
   .aboutMeSection .aboutMeText {
     padding-left: 5rem !important;
@@ -331,7 +557,8 @@
     padding-top: 1rem !important;
     font-size: 5rem !important;
   }
-  .aboutMeSection .blob4, .aboutMeSection .blob5 {
+  .aboutMeSection .blob4,
+.aboutMeSection .blob5 {
     bottom: 30%;
   }
 
@@ -351,6 +578,26 @@
   .howIWorkSection .textHowIWork p {
     line-height: 1.75rem !important;
     font-size: 1.45rem !important;
+  }
+
+  .cta h1 {
+    font-size: 5rem !important;
+  }
+  .cta p {
+    font-size: 1.7rem !important;
+  }
+  .cta input {
+    width: 80% !important;
+  }
+  .cta textarea {
+    flex-basis: 80% !important;
+  }
+
+  .projects h1 {
+    font-size: 4rem !important;
+  }
+  .projects .tipSlikaDiv li {
+    font-size: 1.3rem !important;
   }
 }
 @media (max-width: 1400px) {
@@ -384,8 +631,40 @@
   .aboutMeSection .wavesTop {
     height: 300px;
   }
+
+  .heroProjects .goBackContainer {
+    left: 6vw;
+  }
+  .heroProjects .goBackContainer svg {
+    width: 7%;
+  }
+  .heroProjects .goBackContainer p {
+    font-size: 1.2rem !important;
+  }
+
+  .projects .container-fluid .cardRow {
+    margin: 3rem !important;
+  }
+
+  .zaNastanot .container-fluid {
+    margin-top: 3rem !important;
+  }
+  .zaNastanot h2 {
+    padding-bottom: 0 !important;
+  }
+  .zaNastanot p {
+    font-size: 1rem !important;
+  }
+  .zaNastanot h3 {
+    padding: 0 !important;
+  }
 }
 @media (max-width: 1250px) {
+  .nastaniHero .container-fluid h1 {
+    padding: 0 2rem !important;
+    font-size: 3rem !important;
+  }
+
   .projectsSection .container-fluid .projectDesc p {
     font-size: 1.1rem !important;
   }
@@ -400,18 +679,70 @@
   .sertifikatiSection .sertifikatiText h1 {
     font-size: 3rem !important;
   }
-  .sertifikatiSection .sertifikatiText p {
+
+  .cta h1 {
+    font-size: 3.4rem !important;
+    padding-top: 6rem !important;
+  }
+  .cta p {
+    font-size: 1.25rem !important;
+  }
+  .cta .waveTransitionBottom {
+    height: 100px !important;
+  }
+  .cta .container-fluid {
+    padding-top: 1rem !important;
+  }
+  .cta .container-fluid input,
+.cta .container-fluid textarea {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.8rem !important;
+    border: 3px solid #fff !important;
+  }
+  .cta .container-fluid input:hover,
+.cta .container-fluid textarea:hover {
+    border: #75b6ff 3px solid !important;
+  }
+  .cta button {
+    font-size: 0.8rem !important;
+    margin-top: 0.5rem !important;
+    border: 3px solid #fff !important;
+  }
+  .cta button:hover {
+    border: #75b6ff 3px solid !important;
+  }
+  .cta .socialMediaCTA {
+    margin-bottom: 1rem !important;
+  }
+  .cta .socialMediaCTA .container {
+    padding-top: 1rem !important;
+  }
+  .cta .socialMediaCTA .container li {
+    margin: 0 0.5rem !important;
+  }
+  .cta .socialMediaCTA .container li svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .cta footer .copyright p {
+    margin-top: 0 !important;
     font-size: 1rem !important;
+  }
+  .cta footer .iconsCredits {
+    font-size: 0.5rem !important;
   }
 }
 @media (max-width: 1150px) {
+  .heroProjects h1 {
+    font-size: 4rem !important;
+  }
+  .heroProjects p {
+    font-size: 1.5rem !important;
+  }
+
   .globe {
     width: 32px;
     height: 32px;
-  }
-
-  .heroText h1 {
-    font-size: 1.5rem !important;
   }
 
   .projectsSection .container-fluid {
@@ -446,7 +777,7 @@
   }
   .aboutMeSection .blob4,
 .aboutMeSection .blob5 {
-    bottom: 33% !important;
+    bottom: 20% !important;
   }
   .aboutMeSection .wavesTop {
     height: 130px !important;
@@ -457,14 +788,18 @@
   }
 }
 @media (max-width: 991px) {
+  .heroProjects h1 {
+    font-size: 3rem !important;
+  }
+  .heroProjects p {
+    font-size: 1rem !important;
+  }
+
   .heroSection .heroText {
-    margin-left: 0 !important;
+    text-align: center;
     width: 80%;
     margin: 0 10% !important;
-    margin-top: 10vh !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20vh !important;
   }
   .heroSection .scrollIndicator {
     width: 5% !important;
@@ -501,7 +836,7 @@
 
   .aboutMeSection .aboutMeText {
     text-align: center !important;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem !important;
   }
   .aboutMeSection .quoteContainer .rapper {
     font-size: 1.5rem !important;
@@ -509,10 +844,173 @@
   .aboutMeSection .wavesTop {
     height: 90px !important;
   }
+  .aboutMeSection .blob4,
+.aboutMeSection .blob5 {
+    bottom: 14% !important;
+  }
+  .aboutMeSection .aboutMeImg .jas {
+    top: 40%;
+    left: 35%;
+  }
+  .aboutMeSection .blob4,
+.aboutMeSection .blob5 {
+    display: none !important;
+  }
 
-  .howIWorkSection .imgHowIWork img {
-    width: 30%;
-    margin: 0 35%;
+  .howIWorkSection .imgHowIWork {
+    display: none;
+  }
+  .howIWorkSection h1 {
+    font-size: 3rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .howIWorkSection h1 span {
+    background-size: 100% 8px !important;
+  }
+  .howIWorkSection .textHowIWork h2 {
+    font-size: 2rem !important;
+  }
+  .howIWorkSection .textHowIWork h2 span {
+    background-size: 100% 5px !important;
+  }
+  .howIWorkSection .textHowIWork p {
+    font-size: 1rem !important;
+    letter-spacing: 0;
+    padding: 0 5rem;
+    line-height: 1.5rem !important;
+  }
+  .howIWorkSection .workProcess {
+    padding: 2rem !important;
+  }
+  .howIWorkSection .workProcess h3 {
+    font-size: 2rem !important;
+  }
+  .howIWorkSection .workProcess h3 span {
+    background-size: 100% 5px !important;
+  }
+  .howIWorkSection .workProcess p {
+    font-size: 1.25rem !important;
+    line-height: 1.2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .howIWorkSection .workProcess .stat {
+    margin-top: -0.75rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .cta h1 {
+    font-size: 3rem !important;
+  }
+  .cta p {
+    font-size: 0.9rem !important;
+    letter-spacing: 1px !important;
+    margin: 0;
+  }
+  .cta .container-fluid .CTAInputCol1 {
+    padding-right: 0.25rem !important;
+  }
+  .cta .container-fluid .CTAInputCol2 {
+    padding-left: 0.25rem !important;
+  }
+  .cta .container-fluid .messageRow {
+    padding: 0.75rem 0 !important;
+  }
+
+  .projects h1 {
+    font-size: 4rem !important;
+  }
+  .projects .container-fluid {
+    padding: 0 10rem !important;
+  }
+  .projects .container-fluid .cardRow .card {
+    margin-top: 2rem !important;
+  }
+  .projects .container-fluid .cardRow .card h5 {
+    font-size: 1rem !important;
+  }
+  .projects .container-fluid .cardRow .card h5 .badge {
+    font-size: 0.8rem !important;
+  }
+  .projects .container-fluid .cardRow .card p {
+    font-size: 0.8rem !important;
+  }
+
+  .projects .tipSlikaDiv li {
+    font-size: 1rem !important;
+    padding: 0 0.5rem !important;
+  }
+  .projects .container-fluid {
+    padding: 0 3rem !important;
+  }
+
+  .zaNastanot h3, .zaNastanot p {
+    text-align: center;
+  }
+  .zaNastanot h3 {
+    padding-top: 1rem !important;
+  }
+  .zaNastanot .resizeImg {
+    margin: 0 !important;
+  }
+  .zaNastanot .zaNastanotCol {
+    text-align: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .nastaniHero .container-fluid h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .cta .waveTransitionBottom {
+    height: 70px !important;
+  }
+  .cta h1 {
+    padding-top: 4rem !important;
+  }
+  .cta p {
+    padding: 0 3rem !important;
+  }
+  .cta .container-fluid #textInput {
+    float: none;
+  }
+  .cta .container-fluid #emailInput {
+    float: none;
+  }
+  .cta .container-fluid .CTAInputCol1,
+.cta .container-fluid .CTAInputCol2,
+.cta .container-fluid .messageRow {
+    padding: 0.25rem 0 !important;
+  }
+
+  .projects h1 {
+    font-size: 3rem !important;
+  }
+  .projects .tipSlikaDiv {
+    padding: 0 !important;
+  }
+  .projects .tipSlikaDiv ul {
+    padding: 0% !important;
+    display: block !important;
+    text-align: center;
+  }
+  .projects .tipSlikaDiv ul li {
+    margin: 0.5rem 0 !important;
+    display: block !important;
+  }
+  .projects .container-fluid {
+    padding: 0 !important;
+  }
+  .projects .container-fluid .cardCol {
+    padding: 0 !important;
+  }
+
+  .projectsFooter .copyright p {
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+  }
+  .projectsFooter .copyright .iconsCredits {
+    font-size: 0.7rem !important;
   }
 }
 @media (max-width: 750px) {
@@ -520,12 +1018,25 @@
     height: 60vh;
   }
 
-  .aboutMeSection .blob4,
-.aboutMeSection .blob5 {
-    display: none !important;
+  .aboutMeSection .jas {
+    width: 50%;
+    left: 25% !important;
+    bottom: 10% !important;
   }
 }
 @media (max-width: 650px) {
+  .heroDesc {
+    padding: 0 5rem;
+  }
+
+  .scrollIndicatorLink img {
+    bottom: 13vh;
+    left: 47%;
+  }
+  .scrollIndicatorLink img:hover {
+    bottom: 10vh;
+  }
+
   .projectsSection .container-fluid {
     padding: 1rem 1.5rem !important;
   }
@@ -534,6 +1045,7 @@
   }
   .projectsSection .container-fluid .projectsText p {
     font-size: 0.75rem !important;
+    padding: 1rem !important;
   }
   .projectsSection .container-fluid .projectsText a {
     font-size: 0.8rem !important;
@@ -541,9 +1053,13 @@
 
   .aboutMeSection .quoteContainer .quote {
     font-size: 4rem !important;
+    line-height: 4rem !important;
+    margin-bottom: 0 !important;
   }
   .aboutMeSection .quoteContainer .rapper {
     font-size: 1.2rem !important;
+    padding-top: 0 !important;
+    margin: 0 !important;
   }
   .aboutMeSection .aboutMeText {
     padding: 2rem 1.5rem 0 1.5rem !important;
@@ -557,6 +1073,114 @@
   .aboutMeSection .aboutMeText .customAboutMeText {
     font-size: 3.2rem !important;
   }
+
+  .howIWorkSection h1 {
+    font-size: 2.3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .howIWorkSection h1 span {
+    background-size: 100% 6px !important;
+  }
+  .howIWorkSection .container-fluid .textHowIWork h2 {
+    font-size: 1.8rem !important;
+  }
+  .howIWorkSection .container-fluid .textHowIWork p {
+    font-size: 0.9rem !important;
+    line-height: 1.2rem !important;
+    padding: 0 2rem !important;
+  }
+  .howIWorkSection .container-fluid h3 {
+    font-size: 1.6rem !important;
+  }
+  .howIWorkSection .container-fluid p {
+    font-size: 1rem !important;
+  }
+  .howIWorkSection .container-fluid .stat {
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 575px) {
+  .zaNastanot .container-fluid {
+    padding: 0 2rem !important;
+  }
+  .zaNastanot h2 {
+    font-size: 2rem !important;
+  }
+  .zaNastanot h2 span {
+    background-position-y: 30px;
+    background-size: 100% 5px;
+  }
+  .zaNastanot h3 {
+    font-size: 1.6rem !important;
+  }
+  .zaNastanot h3 span {
+    background-position-y: 25px !important;
+    background-size: 100% 5px;
+  }
+  .zaNastanot p {
+    font-size: 0.85rem !important;
+  }
+}
+@media (max-width: 520px) {
+  .aboutMeSection .container-fluid .aboutMeText {
+    margin-bottom: 5rem !important;
+  }
+  .aboutMeSection .container-fluid .aboutMeText h1 {
+    font-size: 2rem !important;
+    background-size: 100% 6px;
+  }
+  .aboutMeSection .container-fluid .aboutMeText p {
+    font-size: 0.85rem !important;
+  }
+  .aboutMeSection .container-fluid .aboutMeText .customAboutMeText {
+    line-height: 0 !important;
+    margin-top: -1rem !important;
+    font-size: 2.5rem !important;
+    text-shadow: 0px 3px 0px #96009e, 0px 6px 0px #5e0063;
+  }
+  .aboutMeSection .quoteContainer .quote {
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+  }
+  .aboutMeSection .quoteContainer .rapper {
+    font-size: 1.1rem !important;
+  }
+
+  .projects h1 {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .cta h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .aboutMeSection .container-fluid .aboutMeImg img {
+    width: 70% !important;
+    left: 16% !important;
+  }
+
+  .howIWorkSection h1 {
+    font-size: 1.8rem !important;
+  }
+  .howIWorkSection .container-fluid {
+    padding: 0 !important;
+  }
+  .howIWorkSection .container-fluid .textHowIWork h2 {
+    font-size: 1.5rem !important;
+  }
+  .howIWorkSection .container-fluid .textHowIWork p {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .nastaniHero .container-fluid h1 {
+    padding: 0 !important;
+  }
+
+  .zaNastanot h2 {
+    font-size: 1.65rem !important;
+  }
 }
 @media (max-height: 1400px) {
   .sertifikatiSection .swiperContainer {
@@ -567,8 +1191,5 @@
   }
   .sertifikatiSection h1 {
     font-size: 4.5rem !important;
-  }
-  .sertifikatiSection p {
-    font-size: 2rem !important;
   }
 }/*# sourceMappingURL=queries.css.map */

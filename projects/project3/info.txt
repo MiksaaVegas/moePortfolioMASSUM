@@ -1,6 +1,0 @@
-This Bootstrap template is owned and under license by BootstrapMade.com. I am using this template for personal use(to train Bootstrap on).
-Started: 13.05.2021
-Template Name: Avilon
-Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
